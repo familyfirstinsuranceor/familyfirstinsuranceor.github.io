@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openTab(evt, cardName) {
+            // Declare all variables
+            let i, cardcontent, cardlinks
+
+            // Get all elements with class="cardcontent" and hide them
+            cardcontent = document.getElementsByClassName("cardcontent")
+            for (i = 0; i < cardcontent.length; i++) {
+                cardcontent[i].style.display = "none"
+            }
+
+            // Get all elements with class="cardlinks" and remove the class "active"
+            cardlinks = document.getElementsByClassName("cardlinks")
+            for (i = 0; i < cardlinks.length; i++) {
+                cardlinks[i].className = cardlinks[i].className.replace(" active", "")
+            }
+
+            // Show the current card, and add an "active" class to the button that opened the card
+            document.getElementById(cardName).style.display = "block"
+            evt.currentTarget.className += " active"
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById("autobtn").click()
+        }, false)
+
+    </script>
+    <style>
+        .wrapper {
+            position: relative;
+        }
+
+        .cardColumn {
+            width: 25%;
+            align-items: stretch;
+        }
+
+        .card {
+            height: 100%;
+            text-align: center;
+        }
+
+        #auto,
+        #home,
+        #commercial,
+        #life {
+            height: 100%;
+            background-color: #3e87f5;
+        }
+
+        .card-img-top {
+            align-items: center;
+        }
+
+        .autobtn,
+        .homebtn,
+        .buisbtn,
+        .lifebtn {
+            position: absolute;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+
+</html>
+<div class="container-fluid p-5 bg-primary text-white">
+    <div class="row d-flex align-items-end flex-row">
+        <img src="..." class="rounded float-left">
+        <div class="col">
+            <h1 class="text-start">Family First Insurance Oregon</h1>
+            <h4 class="text-start">Providing Family Focused Coverage.</h4>
+        </div>
+        <div class="col float-end">
+            <h2 class="text-end">Javier De La O Bailon</h2>
+            <div class="row float-end">
+                <h6 class="text-end">503-313-1942</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-xl-12">
+            <h3 class="text-center">What type of insurance are you looking for?</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cardColumn">
+            <div class="card" style="">
+                <img src="https://previews.123rf.com/images/victor85/victor852001/victor85200100003/138291218-car-line-icon-minimalist-icon-isolated-on-white-background-car-simple-silhouette-web-site-page-and-m.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title mt-auto">Auto Insurance</h5>
+                    <button class="btn btn-primary mt-auto" id="autobtn" style="btn btn-primary"
+                        onclick="openTab(event, 'auto')">Auto</button>
+                </div>
+            </div>
+        </div>
+        <div class="cardColumn ">
+            <div class="card" style="">
+                <img src="https://static.vecteezy.com/system/resources/previews/004/963/992/original/minimalist-house-design-illustration-vector.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title mt-auto">Home Insurance</h5>
+                    <button class="btn btn-primary mt-auto" onclick="openTab(event, 'home')">Home</button>
+                </div>
+            </div>
+        </div>
+        <div class="cardColumn">
+            <div class="card" style="">
+                <img src="https://image.shutterstock.com/image-vector/architecture-sketch-drawing-buildingcity-260nw-179448722.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title mt-auto">Commercial Insurance</h5>
+                    <button class="btn btn-primary mt-auto" onclick="openTab(event, 'commercial')">Commercial</button>
+                </div>
+            </div>
+        </div>
+        <div class="cardColumn">
+            <div class="card" style="">
+                <img src="https://img.freepik.com/premium-vector/minimalist-hospital-building_450176-22.jpg?w=2000"
+                    class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title mt-auto">Life Insurance</h5>
+                    <button class="btn btn-primary mt-auto" onclick="openTab(event, 'life')">Life</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-5 bg-primary text-white">
+    <div class="container mt-12">
+        <div class='wrapper'>
+            <div id="auto" class="cardcontent">
+                <h3 class="text-center">Car Insurance</h3>
+                <h6 class="text-center">Insuring your vehicle is both important financially, and required by law...</h6>
+                <div id="auto" class="card">
+                    <form id="fs-frm" name="registration-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/mkneqgvb" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <fieldset class="user-name">
+                                <legend>Full Name</legend>
+                                <div>
+                                    <input type="text" name="first" id="first-name" placeholder="First Name"
+                                        required="">
+                                    <input type="text" name="middle" id="middle-name" placeholder="Middle Name">
+                                    <input type="text" name="last" id="last-name" placeholder="Last Name" required="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="dateofbirth">
+                                <legend>Date of Birth</legend>
+                                <div>
+                                    <input id="month" name="month" placeholder="Month" required="">
+                                    </input>
+                                    <input id="day" name="day" placeholder="Day">
+                                    </input>
+                                    <input id="year" name="year" placeholder="Year" required="">
+                                    </input>
+                                </div>
+                            </fieldset>
+                            <label for="drivers-license number">Oregon Driver License Number</label>
+                            <input type="text" name="drivers-license number" id="drivers-license" placeholder="ID#"
+                                required="">
+                            <div></div>
+                            <label for="vehicle identification number">Vehical Identification Number</label>
+                            <input type="text" name="vehicle identification number" id="vehicle identification number"
+                                placeholder="ID#" required="">
+                            <div></div>
+                            <label for="street-address">Street Address</label>
+                            <input type="text" name="street" id="street-address" placeholder="Street" required="">
+                            <label for="email-address">Email Address</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
+                                required="">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" name="phone-number" id="phone-number" placeholder="###-###-####"
+                                required="">
+                            <input type="hidden" name="_subject" id="email-subject"
+                                value="Registration Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+                <h6 class="text-center">Accidents can happen at any time, and when things go wrong, you need a policy
+                    that does right by you...
+                </h6>
+            </div>
+            <div id="home" class="cardcontent">
+                <h3 class="text-center">Homeowners Insurance</h3>
+                <h6 class="text-center">You can never know what will happen to your home...</h6>
+                <div id="home" class="card">
+                    <form id="fs-frm" name="registration-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/mkneqgvb" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <fieldset class="user-name">
+                                <legend>Full Name</legend>
+                                <div>
+                                    <input type="text" name="first" id="first-name" placeholder="First Name"
+                                        required="">
+                                    <input type="text" name="middle" id="middle-name" placeholder="Middle Name">
+                                    <input type="text" name="last" id="last-name" placeholder="Last Name" required="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="dateofbirth">
+                                <legend>Date of Birth</legend>
+                                <div>
+                                    <input id="month" name="month" placeholder="Month" required="">
+                                    </input>
+                                    <input id="day" name="day" placeholder="Day">
+                                    </input>
+                                    <input id="year" name="year" placeholder="Year" required="">
+                                    </input>
+                                </div>
+                            </fieldset>
+                            <label for="drivers-license number">Oregon Driver License Number</label>
+                            <input type="text" name="drivers-license number" id="drivers-license" placeholder="ID#"
+                                required="">
+                            <div></div>
+                            <label for="street-address">Street Address</label>
+                            <input type="text" name="street" id="street-address" placeholder="Street" required="">
+                            <label for="email-address">Email Address</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
+                                required="">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" name="phone-number" id="phone-number" placeholder="###-###-####"
+                                required="">
+                            <input type="hidden" name="_subject" id="email-subject"
+                                value="Registration Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+                <h6 class="text-center">Your home is your sanctuary, and losing it is bad enough, take the following
+                    steps to protect it today...
+                </h6>
+            </div>
+            <div id="commercial" class="cardcontent">
+                <h3 class="text-center">Business and Commercial Insurance</h3>
+                <h6 class="text-center">Your business is the heart of a community, learn how to protect it today...</h6>
+                <div id="commercial" class="card">
+                    <form id="fs-frm" name="registration-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/mkneqgvb" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <label for="business-name">Business Name</label>
+                            <input type="text" name="name" id="full-name" placeholder="Business Name" required="">
+                            <fieldset class="user-name">
+                                <legend>Full Name</legend>
+                                <div>
+                                    <input type="text" name="first" id="first-name" placeholder="First Name"
+                                        required="">
+                                    <input type="text" name="middle" id="middle-name" placeholder="Middle Name">
+                                    <input type="text" name="last" id="last-name" placeholder="Last Name" required="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="dateofbirth">
+                                <legend>Date of Birth</legend>
+                                <div>
+                                    <input id="month" name="month" placeholder="Month" required="">
+                                    </input>
+                                    <input id="day" name="day" placeholder="Day">
+                                    </input>
+                                    <input id="year" name="year" placeholder="Year" required="">
+                                    </input>
+                                </div>
+                            </fieldset>
+                            <label for="drivers-license number">Oregon Driver License Number</label>
+                            <input type="text" name="drivers-license number" id="drivers-license" placeholder="ID#"
+                                required="">
+                            <label for="street-address">Street Address</label>
+                            <input type="text" name="street" id="street-address" placeholder="Street" required="">
+                            <label for="annual-reciepts">Annual Reciepts</label>
+                            <input type="text" name="annual-reciepts" id="annual-reciepts" placeholder="annual-reciepts"
+                                required="">
+                            <div></div>
+                            <label for="federal-id-number">Federal ID Number</label>
+                            <input type="number" name="federal-id-number" id="federal-id-number"
+                                placeholder="###-###-###" required="">
+                            <label for="employee-count">Number of Employees</label>
+                            <input type="number" name="employee-count" id="employee-count" placeholder="employee-count"
+                                required="">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" name="phone-number" id="phone-number" placeholder="###-###-####"
+                                required="">
+                            <input type="hidden" name="_subject" id="email-subject"
+                                value="Registration Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+                <h6 class="text-center">Businesses need protection for their assets and products in this day and age...
+                </h6>
+            </div>
+            <div id="life" class="cardcontent">
+                <h3 class="text-center">Life Insurance</h3>
+                <h6 class="text-center">Health can take unexpected turns, and your loved ones may be left footing the
+                    bill...</h6>
+                <div id="life" class="card">
+                    <form id="fs-frm" name="registration-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/mkneqgvb" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <fieldset class="user-name">
+                                <legend>Full Name</legend>
+                                <div>
+                                    <input type="text" name="first" id="first-name" placeholder="First Name"
+                                        required="">
+                                    <input type="text" name="middle" id="middle-name" placeholder="Middle Name">
+                                    <input type="text" name="last" id="last-name" placeholder="Last Name" required="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="dateofbirth">
+                                <legend>Date of Birth</legend>
+                                <div>
+                                    <input id="month" name="month" placeholder="Month" required="">
+                                    </input>
+                                    <input id="day" name="day" placeholder="Day">
+                                    </input>
+                                    <input id="year" name="year" placeholder="Year" required="">
+                                    </input>
+                                </div>
+                            </fieldset>
+                            <label for="drivers-license number">Oregon Driver License Number</label>
+                            <input type="text" name="drivers-license number" id="drivers-license" placeholder="ID#"
+                                required="">
+                            <div></div>
+                            <label for="street-address">Street Address</label>
+                            <input type="text" name="street" id="street-address" placeholder="Street" required="">
+                            <label for="email-address">Email Address</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
+                                required="">
+                            <div></div>
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" name="phone-number" id="phone-number" placeholder="###-###-####"
+                                required="">
+                            <div></div>
+                            <label for="history-of-illness">History of Illness</label>
+                            <div></div>
+                            <textarea rows="2" name="note" id="note"
+                                placeholder="Include any medical information on any chronic illnesses"></textarea>
+                            <input type="hidden" name="_subject" id="email-subject"
+                                value="Registration Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+                <h6 class="text-center">Prepare your loved ones for the worst while living at your best...
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <div class="d-flex flex-row">
+            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            <h6 class="text-center">Contact Me:
+            </h6>
+            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            <h6 class="text-center">503-313-1942
+            </h6>
+            <div></div>
+            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            <h6 class="text-center">JARBG LLC Insurance, 1419 Parkside CT, Newberg, OR, 97132
+            </h6>
+        </div>
+    </a>
+</nav>
