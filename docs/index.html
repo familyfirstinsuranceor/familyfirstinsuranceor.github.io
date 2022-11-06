@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Family First Insurance</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="form-container">
+        <!-- Nav Bar -->
+        <div class="row" id="top-contact-banner">
+            <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="row">
+                    <div id="top-company-name"> <img id="business-logo-navbar" src="img/family-first-insurance.png" />
+                        Family First Insurance
+                    </div>
+                </div>
+            </div>
+            <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div id="top-call-us"><img id="phone-image-navbar" src="img/phone.png" />503-313-1942</div>
+            </div>
+        </div>
+        <!-- Banner -->
+        <div class="row mainbg">
+            <div class="col-xs-0 col-md-2 col-lg-2"></div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6" id="quote-text">
+                Request a Quote Today!
+            </div>
+            <div class="col-xs-0 col-md-4 col-lg-0"></div>
+            <div class="d-none d-md-block d-lg-block py-0 py-lg-4 col-xs-0 col-lg-6" id="company-logo">
+                <img id="business-logo" src="img/family-first-insurance.png">
+            </div>
+        </div>
+        <!-- Tabs -->
+        <div class="row" id="business-banner">
+            <div class="row">
+                <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 g-0" id="form-tab-filler"></div>
+                <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 g-0">
+                    <div class="row">
+                        <nav class="navigation-tabs">
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-auto-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-auto" type="button" role="tab" aria-controls="nav-auto"
+                                    aria-selected="true">Auto</button>
+                                <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="false">Home</button>
+                                <button class="nav-link" id="nav-commercial-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-commercial" type="button" role="tab"
+                                    aria-controls="nav-commercial" aria-selected="false">Commercial</button>
+                                <button class="nav-link" id="nav-life-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-life" type="button" role="tab" aria-controls="nav-life"
+                                    aria-selected="false">Life</button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 g-0" id="form-tab-filler"></div>
+            </div>
+        </div>
+        <!-- Main content view -->
+        <div class="row">
+            <!-- Left padding -->
+            <div class="col-xs-0 col-sm-0 col-md-1 col-lg-2 p-2" id="form-filler"></div>
+            <!-- Content -->
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 p-2" id="forms">
+                <div class="row">
+                    <!-- Tabs -->
+                    <!-- Forms -->
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-2 g-0" id="form-tab-filler-inside"></div>
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 g-0 sectionpadding">
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- Auto -->
+                            <div class="tab-pane fade show active" id="nav-auto" role="tabpanel"
+                                aria-labelledby="nav-auto-tab">
+                                <div class="row">
+                                    <div class="row g-0">Auto Info</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="drivers-license-auto"
+                                                placeholder="Licence #">
+                                            <small id="drivers-license-auto-err" class="form-text text-muted"
+                                                hidden>Required,7 characters
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="number" class="form-control"
+                                                id="vehicle-identification-number-auto" placeholder="VIN">
+                                            <small id="vehicle-identification-number-auto-err"
+                                                class="form-text text-muted" hidden>Required,17 characters
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">Name</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="first-name-auto"
+                                                placeholder="First name">
+                                            <small id="first-name-auto-err" class="form-text text-muted" hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="middle-name-auto"
+                                                placeholder="Middle name">
+                                            <small id="middle-name-auto-err" class="form-text text-muted" hidden>
+                                                Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="last-name-auto"
+                                                placeholder="Last name">
+                                            <small id="last-name-auto-err" class="form-text text-muted" hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">Date of birth</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="month-auto" placeholder="MM">
+                                            <small id="month-auto-err" class="form-text text-muted" hidden>Required
+                                                1-12
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="day-auto" placeholder="DD">
+                                            <small id="day-auto-err" class="form-text text-muted" hidden>Required
+                                                1-31
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="year-auto" placeholder="YYYY">
+                                            <small id="year-auto-err" class="form-text text-muted" hidden>Required
+                                                1922-2010
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-0">Address</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-one-auto"
+                                                placeholder="Address line 1">
+                                            <small id="address-one-auto-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-two-auto"
+                                                placeholder="Address line 2">
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="city-auto" placeholder="City">
+                                            <small id="city-auto-err" class="form-text text-muted" hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="state-auto" placeholder="State">
+                                            <small id="state-auto-err" class="form-text text-muted" hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="zip-auto" placeholder="Zip">
+                                            <small id="zip-auto-err" class="form-text text-muted" hidden>Required, 5
+                                                digits
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="email-address-auto"
+                                                placeholder="Email">
+                                            <small id="email-address-auto-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="number" class="form-control" id="phone-number-auto"
+                                                placeholder="Phone number">
+                                            <small id="phone-number-auto-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 p-2">
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 p-2">
+                                            <button type="submit" class="btn" id="get-your-quote"
+                                                onclick="submitAuto()">
+                                                Get Your Quote!</button>
+                                        </div>
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- HOME -->
+                            <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row">
+                                    <div class="row g-0">Name</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="first-name-home"
+                                                placeholder="First name">
+                                            <small id="first-name-home-err" class="form-text text-muted" hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="middle-name-home"
+                                                placeholder="Middle name">
+                                            <small id="middle-name-home-err" class="form-text text-muted" hidden>
+                                                Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="last-name-home"
+                                                placeholder="Last name">
+                                            <small id="last-name-home-err" class="form-text text-muted" hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">Date of birth</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="month-home" placeholder="MM">
+                                            <small id="month-home-err" class="form-text text-muted" hidden>Required
+                                                1-12
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="day-home" placeholder="DD">
+                                            <small id="day-home-err" class="form-text text-muted" hidden>Required
+                                                1-31
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="year-home" placeholder="YYYY">
+                                            <small id="year-home-err" class="form-text text-muted" hidden>Required
+                                                1922-2010
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-0">Address</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-one-home"
+                                                placeholder="Address line 1">
+                                            <small id="address-one-home-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-two-home"
+                                                placeholder="Address line 2">
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="city-home" placeholder="City">
+                                            <small id="city-home-err" class="form-text text-muted" hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="state-home" placeholder="State">
+                                            <small id="state-home-err" class="form-text text-muted" hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="zip-home" placeholder="Zip">
+                                            <small id="zip-home-err" class="form-text text-muted" hidden>Required, 5
+                                                digits
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="email-address-home"
+                                                placeholder="Email">
+                                            <small id="email-address-home-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="number" class="form-control" id="phone-number-home"
+                                                placeholder="Phone number">
+                                            <small id="phone-number-home-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="drivers-license-home"
+                                                placeholder="License #">
+                                            <small id="drivers-license-home-err" class="form-text text-muted"
+                                                hidden>Required,7 characters
+                                            </small>
+                                        </div>
+
+                                    </div>
+                                    <div class="row g-0 p-2">
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 p-2">
+                                            <button type="submit" class="btn" id="get-your-quote"
+                                                onclick="submitHome()">Get
+                                                Your Quote!</button>
+                                        </div>
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Commercial-->
+                            <div class="tab-pane fade" id="nav-commercial" role="tabpanel"
+                                aria-labelledby="nav-commercial-tab">
+                                <div class="row">
+                                    <div class="row g-0">Your Business</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="business-name-commercial"
+                                                placeholder="Business Name">
+                                            <small id="business-name-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="federal-id-number-commercial"
+                                                placeholder="Federal ID Number">
+                                            <small id="federal-id-number-commercial-err" class="form-text text-muted"
+                                                hidden>Required, 9 digits
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="annual-reciepts-commercial"
+                                                placeholder="Annual Reciepts">
+                                            <small id="annual-reciepts-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="number" class="form-control" id="employee-count-commercial"
+                                                placeholder="# of Employees">
+                                            <small id="employee-count-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">Name</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="first-name-commercial"
+                                                placeholder="First name">
+                                            <small id="first-name-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="middle-name-commercial"
+                                                placeholder="Middle name">
+                                            <small id="middle-name-commercial-err" class="form-text text-muted" hidden>
+                                                Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="last-name-commercial"
+                                                placeholder="Last name">
+                                            <small id="last-name-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">Date of birth</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="month-commercial"
+                                                placeholder="MM">
+                                            <small id="month-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                                1-12
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="day-commercial"
+                                                placeholder="DD">
+                                            <small id="day-commercial-err" class="form-text text-muted" hidden>Required
+                                                1-31
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="year-commercial"
+                                                placeholder="YYYY">
+                                            <small id="year-commercial-err" class="form-text text-muted" hidden>Required
+                                                1922-2010
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-0">Address</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-one-commercial"
+                                                placeholder="Address line 1">
+                                            <small id="address-one-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-two-commercial"
+                                                placeholder="Address line 2">
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="city-commercial"
+                                                placeholder="City">
+                                            <small id="city-commercial-err" class="form-text text-muted" hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="state-commercial"
+                                                placeholder="State">
+                                            <small id="state-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="zip-commercial"
+                                                placeholder="Zip">
+                                            <small id="zip-commercial-err" class="form-text text-muted" hidden>Required,
+                                                5
+                                                digits
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="email-address-commercial"
+                                                placeholder="Email">
+                                            <small id="email-address-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="number" class="form-control" id="phone-number-commercial"
+                                                placeholder="Phone number">
+                                            <small id="phone-number-commercial-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="drivers-license-commercial"
+                                                placeholder="License #">
+                                            <small id="drivers-license-commercial-err" class="form-text text-muted"
+                                                hidden>Required,7 characters
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 p-2">
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 p-2">
+                                            <button type="submit" class="btn p-2" id="get-your-quote"
+                                                onclick="submitCommercial()">Get Your Quote!</button>
+                                        </div>
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Life-->
+                            <div class="tab-pane fade" id="nav-life" role="tabpanel" aria-labelledby="nav-life-tab">
+                                <div class="row">
+                                    <div class="row g-0">Name</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="first-name-life"
+                                                placeholder="First name">
+                                            <small id="first-name-life-err" class="form-text text-muted" hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="middle-name-life"
+                                                placeholder="Middle name">
+                                            <small id="middle-name-life-err" class="form-text text-muted" hidden>
+                                                Alphanumeric only
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="last-name-life"
+                                                placeholder="Last name">
+                                            <small id="last-name-life-err" class="form-text text-muted" hidden>Required
+                                                Field, Alphanumeric only
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">Date of birth</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="month-life" placeholder="MM">
+                                            <small id="month-life-err" class="form-text text-muted" hidden>Required
+                                                1-12
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="day-life" placeholder="DD">
+                                            <small id="day-life-err" class="form-text text-muted" hidden>Required
+                                                1-31
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="year-life" placeholder="YYYY">
+                                            <small id="year-life-err" class="form-text text-muted" hidden>Required
+                                                1922-2010
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-0">Address</div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-one-life"
+                                                placeholder="Address line 1">
+                                            <small id="address-one-life-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="address-two-life"
+                                                placeholder="Address line 2">
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="city-life" placeholder="City">
+                                            <small id="city-life-err" class="form-text text-muted" hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="text" class="form-control" id="state-life" placeholder="State">
+                                            <small id="state-life-err" class="form-text text-muted" hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 p-2">
+                                            <input type="number" class="form-control" id="zip-life" placeholder="Zip">
+                                            <small id="zip-life-err" class="form-text text-muted" hidden>Required, 5
+                                                digits
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="email-address-life"
+                                                placeholder="Email">
+                                            <small id="email-address-life-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="number" class="form-control" id="phone-number-life"
+                                                placeholder="Phone number">
+                                            <small id="phone-number-life-err" class="form-text text-muted"
+                                                hidden>Required
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                            <input type="text" class="form-control" id="drivers-license-life"
+                                                placeholder="License #">
+                                            <small id="drivers-license-life-err" class="form-text text-muted"
+                                                hidden>Required,7 characters
+                                            </small>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2">
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">Medical History</div>
+                                    <div class="row g-0">
+                                        <textarea type="text" class="form-control" id="note-life"
+                                            placeholder="Medical History">
+                                        </textarea>
+                                    </div>
+                                    <div class="row g-0 p-2">
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 p-2">
+                                            <button type="submit" class="btn" id="get-your-quote"
+                                                onclick="submitLife()">Get
+                                                Your Quote!</button>
+                                        </div>
+                                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 p-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- hidden forms -->
+                            <div id="hidden-forms">
+                                <div id="auto-hidden" hidden>
+                                    <form id="auto-hidden-form" name="auto-registration-form" accept-charset="utf-8"
+                                        action="https://formspree.io/f/mkneqgvb" method="POST">
+                                        <!-- https://formspree.io/f/mkneqgvb -->
+                                        <fieldset id="fs-frm-inputs">
+                                            <fieldset class="user-name">
+                                                <div>
+                                                    <input type="text" name="first" id="first-name-auto-hidden"
+                                                        placeholder="First Name">
+                                                    <input type="text" name="middle" id="middle-name-auto-hidden"
+                                                        placeholder="Middle Name">
+                                                    <input type="text" name="last" id="last-name-auto-hidden"
+                                                        placeholder="Last Name">
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="dateofbirth">
+                                                <div>
+                                                    <input type="number" name="month" id="month-auto-hidden"
+                                                        placeholder="MM">
+                                                    <input type="number" name="day" id="day-auto-hidden"
+                                                        placeholder="DD">
+                                                    <input type="number" name="year" id="year-auto-hidden"
+                                                        placeholder="YYYY">
+                                                </div>
+                                            </fieldset>
+                                            <label for="drivers-license number">Oregon Driver License Number</label>
+                                            <input type="text" name="drivers-license number"
+                                                id="drivers-license-auto-hidden" placeholder="ID#">
+                                            <label for="vehicle identification number">Vehical Identification
+                                                Number</label>
+                                            <input type="text" name="vehicle identification number"
+                                                id="vehicle-identification-number-auto-hidden" placeholder="ID#">
+                                            <label for="address-one-auto">Address Line 1</label>
+                                            <input type="text" name="address-one-auto" id="address-one-auto-hidden"
+                                                placeholder="Address">
+                                            <!-- Line 2 should be not required -->
+                                            <label for="address-two-auto">Address Line 2</label>
+                                            <input type="text" name="address-two-auto" id="address-two-auto-hidden"
+                                                placeholder="Address">
+                                            <label for="city">City</label>
+                                            <input type="text" name="city" id="city-auto-hidden" placeholder="City">
+                                            <label for="state">State</label>
+                                            <input type="text" name="state" id="state-auto-hidden" placeholder="State"
+                                                value="OR">
+                                            <label for="zip">Zip</label>
+                                            <input type="number" name="zip" id="zip-auto-hidden" placeholder="#####">
+                                            <label for="email-address">Email Address</label>
+                                            <input type="email" name="_replyto" id="email-address-auto-hidden"
+                                                placeholder="email@domain.tld">
+                                            <label for="phone-number">Phone Number</label>
+                                            <input type="number" name="phone-number" id="phone-number-auto-hidden"
+                                                placeholder="###-###-####">
+                                            <input type="hidden" name="_subject" id="email-subject-auto-hidden"
+                                                value="Registration Form Submission">
+                                        </fieldset>
+                                        <input type="submit" id="auto-hidden-form-submit" value="Register">
+                                    </form>
+                                </div>
+
+                                <div id="home-hidden" class="tabcontent" hidden>
+                                    <form id="home-hidden-form" name="home-registration-form" accept-charset="utf-8"
+                                        action="https://formspree.io/f/mkneqgvb" method="POST">
+                                        <fieldset id="fs-frm-inputs">
+                                            <fieldset class="user-name">
+                                                <div>
+                                                    <input type="text" name="first" id="first-name-home-hidden">
+                                                    <input type="text" name="middle" id="middle-name-home-hidden">
+                                                    <input type="text" name="last" id="last-name-home-hidden">
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="dateofbirth">
+                                                <div>
+                                                    <input type="number" name="month" id="month-home-hidden">
+                                                    <input type="number" name="day" id="day-home-hidden">
+                                                    <input type="number" name="year" id="year-home-hidden">
+                                                </div>
+                                            </fieldset>
+                                            <input type="text" name="drivers-license number"
+                                                id="drivers-license-home-hidden">
+                                            <input type="text" name="address-one-home" id="address-one-home-hidden"
+                                                placeholder="Address">
+                                            <input type="text" name="address-two-home" id="address-two-home-hidden"
+                                                placeholder="Address">
+                                            <input type="text" name="city" id="city-home-hidden" placeholder="City">
+                                            <input type="text" name="state" id="state-home-hidden" placeholder="State"
+                                                value="OR">
+                                            <input type="number" name="zip" id="zip-home-hidden" placeholder="#####">
+                                            <input type="email" name="_replyto" id="email-address-home-hidden"
+                                                placeholder="email@domain.tld">
+                                            <input type="number" name="phone-number" id="phone-number-home-hidden"
+                                                placeholder="###-###-####">
+                                            <input type="hidden" name="_subject" id="email-subject-home-hidden"
+                                                value="Registration Form Submission">
+                                        </fieldset>
+                                        <input type="submit" id="home-hidden-form-submit" value="Register">
+                                    </form>
+                                </div>
+
+                                <div id="commercial-hidden" class="tabcontent" hidden>
+                                    <form id="commercial-hidden-form" name="commercial-registration-form"
+                                        accept-charset="utf-8" action="https://formspree.io/f/mkneqgvb" method="POST">
+                                        <fieldset id="fs-frm-inputs">
+                                            <input type="text" name="business-name"
+                                                id="business-name-commercial-hidden">
+                                            <fieldset class="user-name">
+                                                <div>
+                                                    <input type="text" name="first" id="first-name-commercial-hidden">
+                                                    <input type="text" name="middle" id="middle-name-commercial-hidden">
+                                                    <input type="text" name="last" id="last-name-commercial-hidden">
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="dateofbirth">
+                                                <div>
+                                                    <input type="number" name="month" id="month-commercial-hidden">
+                                                    <input type="number" name="day" id="day-commercial-hidden">
+                                                    <input type="number" name="year" id="year-commercial-hidden">
+                                                </div>
+                                            </fieldset>
+                                            <input type="text" name="drivers-license number"
+                                                id="drivers-license-commercial-hidden">
+                                            <input type="text" name="address-one-commercial"
+                                                id="address-one-commercial-hidden">
+                                            <input type="text" name="address-two-commercial"
+                                                id="address-two-commercial-hidden">
+                                            <input type="text" name="city" id="city-commercial-hidden">
+                                            <input type="text" name="state" id="state-commercial-hidden">
+                                            <input type="number" name="zip" id="zip-commercial-hidden">
+                                            <input type="text" name="annual-reciepts"
+                                                id="annual-reciepts-commercial-hidden">
+                                            <input type="number" name="federal-id-number"
+                                                id="federal-id-number-commercial-hidden">
+                                            <input type="number" name="employee-count"
+                                                id="employee-count-commercial-hidden">
+                                            <input type="email" name="_replyto" id="email-address-commercial-hidden">
+                                            <input type="number" name="phone-number"
+                                                id="phone-number-commercial-hidden">
+                                        </fieldset>
+                                        <input type="submit" id="commercial-hidden-form-submit" value="Register">
+                                    </form>
+                                </div>
+
+                                <div id="life-hidden" class="tabcontent" hidden>
+                                    <form id="life-hidden-form" name="life-registration-form" accept-charset="utf-8"
+                                        action="https://formspree.io/f/mkneqgvb" method="POST">
+                                        <fieldset id="fs-frm-inputs">
+                                            <fieldset class="user-name">
+                                                <legend>Full Name</legend>
+                                                <div>
+                                                    <input type="text" name="first" id="first-name-life-hidden">
+                                                    <input type="text" name="middle" id="middle-name-life-hidden">
+                                                    <input type="text" name="last" id="last-name-life-hidden">
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="dateofbirth">
+                                                <legend>Date of Birth</legend>
+                                                <div>
+                                                    <input type="number" name="month" id="month-life-hidden">
+                                                    <input type="number" name="day" id="day-life-hidden">
+                                                    <input type="number" name="year" id="year-life-hidden">
+                                                </div>
+                                            </fieldset>
+                                            <input type="text" name="drivers-license number"
+                                                id="drivers-license-life-hidden">
+                                            <input type="text" name="address-one-life" id="address-one-life-hidden">
+                                            <input type="text" name="address-two-life" id="address-two-life-hidden">
+                                            <input type="text" name="city" id="city-life-hidden">
+                                            <input type="text" name="state" id="state-life-hidden">
+                                            <input type="number" name="zip" id="zip-life-hidden">
+                                            <input type="email" name="_replyto" id="email-address-life-hidden">
+                                            <input type="number" name="phone-number" id="phone-number-life-hidden">
+                                            <textarea rows="2" name="note" id="note-life-hidden"></textarea>
+                                            <input type="hidden" name="_subject" id="email-subject-life-hidden"
+                                                value="Registration Form Submission">
+                                        </fieldset>
+                                        <input type="submit" id="life-hidden-form-submit" value="Register">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-2 g-0" id="form-tab-filler-inside"></div>
+                    </div>
+                    <!-- Who insurance is offered through -->
+                    <div class="row provider-row sectionpadding">
+                        <div class="col-xs-0 col-sm-2"></div>
+                        <div class="providers col-xs-12 col-sm-8">Quality Insurance Through These Great Providers</div>
+                        <div class="col-xs-0 col-sm-2"></div>
+                    </div>
+                    <div class="row provider-row">
+                        <div class="row" id="logos">
+                            <img class="brand-logo p-1" src="img/symmetry.png" />
+                            <img class="brand-logo p-1" src="img/stillwater.png" />
+                            <img class="brand-logo p-1" src="img/kemper.png" />
+                            <img class="brand-logo p-1" src="img/branch.png" />
+                        </div>
+                        <div class="row" id="logos">
+                            <img class="brand-logo p-1" src="img/Nationwide-Logo.png" />
+                            <img class="brand-logo p-1" src="img/natgen.png" />
+                            <img class="brand-logo p-1" src="img/encompass-i.png" />
+                            <img class="brand-logo p-1" src="img/Allstate-Logo.png" />
+                        </div>
+                    </div>
+                    <!-- Javier's face -->
+                    <div class="row sectionpadding">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <img id="contact-img" src="img/owner_picture.png" />
+                        </div>
+                        <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 p-2" id="javiers-face-text">
+                            I never stop working to get <i>you</i> the best deals
+                        </div>
+                    </div>
+                    <!-- Review -->
+                    <div class="row" id="review">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="review-hr-left">
+                            <hr>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 px-1" id="review-stars">
+                            <img src="img/review_stars.png" class="px-1" id="star" /><img src="img/review_stars.png"
+                                class="px-1" id="star" /><img src="img/review_stars.png" class="px-1" id="star" /><img
+                                class="px-1" src="img/review_stars.png" id="star" /><img src="img/review_stars.png"
+                                class="px-1" id="star" />
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="review-hr-right">
+                            <hr>
+                        </div>
+                        <div class="text-center">5 Star Service Guranteed</div>
+                    </div>
+                    <!-- Testimonials -->
+                    <div class="row py-5" id="testimonials">
+                        <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1" id="placeholder-filler-left"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-11" id="placeholder">
+                            <div class="row py-2">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5" id="testimonial-container-left">
+                                    <div class="row py-3 py-lg-5 text-center">
+                                        <div id="testimonial-name">Nicholas</div>
+                                        <div id="testimonial-text">I saved a ton of money with the insurance Javier
+                                            found me!
+                                        </div>
+                                    </div>
+                                    <hr class="mx-5">
+                                    <div class="row py-3 py-lg-5 text-center">
+                                        <div id="testimonial-name">Brandon</div>
+                                        <div id="testimonial-text">Javier never stops working hard to provide the best
+                                            service in town
+                                        </div>
+                                    </div>
+                                    <hr class="mx-5">
+                                    <div class="row py-3 py-lg-5  text-center">
+                                        <div id="testimonial-name">Jamie</div>
+                                        <div id="testimonial-text">I'm always able to reach out to Javier with questions
+                                            about my policy. The personal service means so much
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-0 col-sm-0 col-md-0 col-lg-7 p-4 p-lg-5"
+                                    id="testimonial-container-right">
+                                    <img src="img/testimonials.png" alt="owner_picture" id="testimonial-img"
+                                        class="d-none d-lg-block">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-0 col-sm-0 col-lg-0" id="placeholder-filler-right"></div>
+                    </div>
+                    <!-- Copy -->
+                    <div class="row provider-row sectionpadding">
+                        <div class="col-xs-12" id="contact-javier">
+                            <div class="fullrow contact-us-copy">Want to talk?</div>
+                            <div class="fullrow contact-us-copy">Call today!</div>
+                            <div class="fullrow bannernumber">503-313-1942</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="info-text">Working hard in the heart of Newberg, <b>Family First Insurance</b> has been
+                            providing an exceptional customer experience purchasing and maintaining insurance for many
+                            years now. Time and time again, Javier is able to provide the personal touch that is missing
+                            from the lives of most buyers.<br><br><b>Family First Insurance</b> will never stop working
+                            for
+                            you. </br>
+                            <img src="img/family-first-insurance.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right padding -->
+            <div class="col-xs-0 col-sm-0 col-md-1 col-lg-2 p-2" id="form-filler"></div>
+        </div>
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-xs-0 col-sm-1 col-lg-2" id="footer-filler"></div>
+            <div class="col-xs-12 col-sm-10 col-lg-8" id="footer">
+                <div class="row py-3">
+                    <div class="text-center">
+                        <div class="row py-1">
+                            <div class="text-center">
+                                Family First Insurance • <a
+                                    href="https://www.google.com/maps/place/1419+Parkside+Ct,+Newberg,+OR+97132/@45.3107777,-122.9799679,17z/data=!3m1!4b1!4m5!3m4!1s0x54954029b95f1e9b:0xd2b7578059ce72a9!8m2!3d45.3107777!4d-122.9799679">1419
+                                    Parkside Ct Newberg, OR 97132
+                                </a> • Phone: 503-313-1942 <br> Fax: 503-487-1164 • Email:
+                                javierdelaobailon@gmail.com<br>Javier De La O Bailon
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="text-center">
+                                Copyright © 2022. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <div class="text-center">
+                                <a href="https://www.familyfirstinsurancejarbgllc.com/index.html">About Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-0 col-sm-1 col-lg-2" id="footer-filler"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
