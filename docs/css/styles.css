@@ -6,19 +6,23 @@ body {
   text-align: center;
 }
 
+.form-text {
+  color: red;
+}
+
 #top-contact-banner {
   background-color: #222222;
-  justify-content: center;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 600;
 }
 
 #business-banner {
-  background-color: #06afef;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 700;
-  row-gap: 0;
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #business-logo-navbar {
@@ -36,35 +40,41 @@ body {
 #javiers-face-text {
   align-self: center;
   font-size: 3em;
+  padding: 16px;
 }
 
-#company-logo {
-  max-width: 10rem;
-  max-height: 10rem;
+#button-col {
+  justify-content: center;
+}
+
+.btn {
+  font-size: 2em;
+  width: 75%;
 }
 
 #contact-javier {
   align-self: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 #testimonial-name {
   align-self: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 #testimonial-text {
   align-self: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .brand-logo {
   align-items: center;
   align-self: center;
+  padding: 32px;
   max-width: 20%;
   max-height: 100%;
 }
@@ -111,12 +121,13 @@ body {
 
 #quote-text {
   text-align: center;
-  font-size: 4em;
-  background-color: #06AFEF;
+  font-size: 1em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 #form-filler {
-  background-color: rgb(34, 24, 28);
+  background-color: #111111;
 }
 
 #form-filler-inside {
@@ -140,15 +151,7 @@ body {
 }
 
 #review {
-  font-size: x-large;
-}
-
-#testimonial-name {
-  font-size: xx-large;
-}
-
-#testimonial-text {
-  font-size: x-large;
+  font-size: 3em;
 }
 
 #review-hr-left,
@@ -159,14 +162,12 @@ body {
 }
 
 #review-stars {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-#star {
-  max-width: 3.5rem;
-}
+#star {}
 
 #testimonial-container-left {
   display: flex;
@@ -176,6 +177,7 @@ body {
 
 #testimonial-container-right {
   display: flex;
+  padding: 4em;
   flex-direction: column;
   justify-content: center;
 
@@ -185,22 +187,49 @@ body {
   background-color: rgb(93, 152, 233);
 }
 
+#testimonials {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.testimonial-copy {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 #testimonial-img {
   border-radius: 50%;
   border: 5px solid rgb(240, 240, 240);
 }
 
+#contact-img-container {
+  display: flex;
+  padding: 2em;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #contact-img {
+  border-radius: 50%;
+  border: 5px solid rgb(240, 240, 240);
   max-width: 100%;
-  padding: 32px;
 }
 
 #top-call-us {
   font-size: 0.5em;
+  white-space: nowrap;
+  padding: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  #top-call-us {
+    display: none;
+  }
 }
 
 #top-company-name {
   font-size: 0.6em;
+  white-space: nowrap;
 }
 
 .provider-row {
@@ -224,8 +253,22 @@ body {
 .sectionpadding {
   padding-top: 48px;
   padding-bottom: 48px;
+  margin-left: 0px;
+  padding-right: 0px;
 }
 
 .mainbg {
   background-color: #06AFEF;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
