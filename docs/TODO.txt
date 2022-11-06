@@ -1,0 +1,22 @@
+
+
+TODO:
+Written testimonials
+New copy for everything
+CSS finished
+Second page
+Google analytics
+Spanish
+
+
+
+
+From class:
+Bigger Get a Quote buttons, text and width
+redo font sizes to be em
+Padding when it's really thin, text is going outside
+Padding on that filler column 
+Make phone hide on small screens
+
+Names bold
+Reviews a slight grey
