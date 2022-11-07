@@ -21,11 +21,9 @@ function submitAuto() {
     let valid = true
 
     document.getElementById("first-name-auto-err").hidden = true
-    document.getElementById("middle-name-auto-err").hidden = true
     document.getElementById("last-name-auto-err").hidden = true
     if (!isValidNames(fName, mName, lName)) {
         document.getElementById("first-name-auto-err").hidden = false
-        document.getElementById("middle-name-auto-err").hidden = false
         document.getElementById("last-name-auto-err").hidden = false
         valid = false
     }
@@ -36,16 +34,6 @@ function submitAuto() {
         document.getElementById("month-auto-err").hidden = false
         document.getElementById("day-auto-err").hidden = false
         document.getElementById("year-auto-err").hidden = false
-        valid = false
-    }
-    document.getElementById("drivers-license-auto-err").hidden = true
-    if (!isValidODL(odlNumber)) {
-        document.getElementById("drivers-license-auto-err").hidden = false
-        valid = false
-    }
-    document.getElementById("vehicle-identification-number-auto-err").hidden = true
-    if (!isValidVIN(viNumber)) {
-        document.getElementById("vehicle-identification-number-auto-err").hidden = false
         valid = false
     }
     document.getElementById("address-one-auto-err").hidden = true
@@ -118,11 +106,9 @@ function submitHome() {
     let valid = true
 
     document.getElementById("first-name-home-err").hidden = true
-    document.getElementById("middle-name-home-err").hidden = true
     document.getElementById("last-name-home-err").hidden = true
     if (!isValidNames(fName, mName, lName)) {
         document.getElementById("first-name-home-err").hidden = false
-        document.getElementById("middle-name-home-err").hidden = false
         document.getElementById("last-name-home-err").hidden = false
         valid = false
     }
@@ -133,11 +119,6 @@ function submitHome() {
         document.getElementById("month-home-err").hidden = false
         document.getElementById("day-home-err").hidden = false
         document.getElementById("year-home-err").hidden = false
-        valid = false
-    }
-    document.getElementById("drivers-license-home-err").hidden = true
-    if (!isValidODL(odlNumber)) {
-        document.getElementById("drivers-license-home-err").hidden = false
         valid = false
     }
     document.getElementById("address-one-home-err").hidden = true
@@ -216,11 +197,9 @@ function submitCommercial() {
         valid = false
     }
     document.getElementById("first-name-commercial-err").hidden = true
-    document.getElementById("middle-name-commercial-err").hidden = true
     document.getElementById("last-name-commercial-err").hidden = true
     if (!isValidNames(fName, mName, lName)) {
         document.getElementById("first-name-commercial-err").hidden = false
-        document.getElementById("middle-name-commercial-err").hidden = false
         document.getElementById("last-name-commercial-err").hidden = false
         valid = false
     }
@@ -231,11 +210,6 @@ function submitCommercial() {
         document.getElementById("month-commercial-err").hidden = false
         document.getElementById("day-commercial-err").hidden = false
         document.getElementById("year-commercial-err").hidden = false
-        valid = false
-    }
-    document.getElementById("drivers-license-commercial-err").hidden = true
-    if (!isValidODL(odlNumber)) {
-        document.getElementById("drivers-license-commercial-err").hidden = false
         valid = false
     }
     document.getElementById("address-one-commercial-err").hidden = true
@@ -320,11 +294,9 @@ function submitLife() {
     let valid = true
 
     document.getElementById("first-name-life-err").hidden = true
-    document.getElementById("middle-name-life-err").hidden = true
     document.getElementById("last-name-life-err").hidden = true
     if (!isValidNames(fName, mName, lName)) {
         document.getElementById("first-name-life-err").hidden = false
-        document.getElementById("middle-name-life-err").hidden = false
         document.getElementById("last-name-life-err").hidden = false
         valid = false
     }
@@ -335,11 +307,6 @@ function submitLife() {
         document.getElementById("month-life-err").hidden = false
         document.getElementById("day-life-err").hidden = false
         document.getElementById("year-life-err").hidden = false
-        valid = false
-    }
-    document.getElementById("drivers-license-life-err").hidden = true
-    if (!isValidODL(odlNumber)) {
-        document.getElementById("drivers-license-life-err").hidden = false
         valid = false
     }
     document.getElementById("address-one-life-err").hidden = true
