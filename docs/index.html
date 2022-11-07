@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-0 col-md-2 col-lg-2"></div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-5" id="quote-text">
-                    Request a Quote Today!
+                    <p><span>Request a</span><span>Quote!</span></p>
                 </div>
                 <div class="col-0 col-md-4 col-lg-0"></div>
             </div>
@@ -52,16 +52,28 @@
                             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                                 <button class="nav-link active" id="nav-auto-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-auto" type="button" role="tab" aria-controls="nav-auto"
-                                    aria-selected="true">Auto</button>
+                                    aria-selected="true">
+                                    <div class="auto-tab-text">Auto</div>
+                                    <div class="auto-tab-img"><img src="img/car-hatchback.png" /></div>
+                                </button>
                                 <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                    aria-selected="false">Home</button>
+                                    aria-selected="false">
+                                    <div class="home-tab-text">Home</div>
+                                    <div class="home-tab-img"><img src="img/home.png" /></div>
+                                </button>
                                 <button class="nav-link" id="nav-commercial-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-commercial" type="button" role="tab"
-                                    aria-controls="nav-commercial" aria-selected="false">Commercial</button>
+                                    aria-controls="nav-commercial" aria-selected="false">
+                                    <div class="commercial-tab-text">Commercial</div>
+                                    <div class="commercial-tab-img"><img src="img/domain.png" /></div>
+                                </button>
                                 <button class="nav-link" id="nav-life-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-life" type="button" role="tab" aria-controls="nav-life"
-                                    aria-selected="false">Life</button>
+                                    aria-selected="false">
+                                    <div class="life-tab-text">Life</div>
+                                    <div class="life-tab-img"><img src="img/account-heart.png" /></div>
+                                </button>
                             </div>
                         </nav>
                     </div>
@@ -74,7 +86,7 @@
             <!-- Left padding -->
             <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-2" id="form-filler"></div>
             <!-- Content -->
-            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 p-2" id="forms">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8" id="forms">
                 <!-- Tabs -->
                 <!-- Forms -->
                 <div class="row">
@@ -92,7 +104,7 @@
                                                 placeholder="Licence #">
                                         </div>
                                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
-                                            <input type="number" class="form-control"
+                                            <input type="text" class="form-control"
                                                 id="vehicle-identification-number-auto" placeholder="VIN">
                                         </div>
                                     </div>
@@ -120,21 +132,21 @@
                                     <div class="row g-0">Date of birth</div>
                                     <div class="row g-0">
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="month-auto" placeholder="MM">
+                                            <input type="text" class="form-control" id="month-auto" placeholder="MM">
                                             <small id="month-auto-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="day-auto" placeholder="DD">
+                                            <input type="text" class="form-control" id="day-auto" placeholder="DD">
                                             <small id="day-auto-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="year-auto" placeholder="YYYY">
+                                            <input type="text" class="form-control" id="year-auto" placeholder="YYYY">
                                             <small id="year-auto-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
@@ -172,7 +184,7 @@
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="zip-auto" placeholder="Zip">
+                                            <input type="text" class="form-control" id="zip-auto" placeholder="Zip">
                                             <small id="zip-auto-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
@@ -189,7 +201,7 @@
                                         </div>
 
                                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
-                                            <input type="number" class="form-control" id="phone-number-auto"
+                                            <input type="text" class="form-control" id="phone-number-auto"
                                                 placeholder="Phone number">
                                             <small id="phone-number-auto-err" class="form-text" hidden>
                                                 Required Field
@@ -233,21 +245,21 @@
                                     <div class="row g-0">Date of birth</div>
                                     <div class="row g-0">
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="month-home" placeholder="MM">
+                                            <input type="text" class="form-control" id="month-home" placeholder="MM">
                                             <small id="month-home-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="day-home" placeholder="DD">
+                                            <input type="text" class="form-control" id="day-home" placeholder="DD">
                                             <small id="day-home-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="year-home" placeholder="YYYY">
+                                            <input type="text" class="form-control" id="year-home" placeholder="YYYY">
                                             <small id="year-home-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
@@ -285,7 +297,7 @@
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="zip-home" placeholder="Zip">
+                                            <input type="text" class="form-control" id="zip-home" placeholder="Zip">
                                             <small id="zip-home-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
@@ -301,7 +313,7 @@
                                         </div>
 
                                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
-                                            <input type="number" class="form-control" id="phone-number-home"
+                                            <input type="text" class="form-control" id="phone-number-home"
                                                 placeholder="Phone number">
                                             <small id="phone-number-home-err" class="form-text" hidden>
                                                 Required Field
@@ -353,7 +365,7 @@
                                             </small>
                                         </div>
                                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
-                                            <input type="number" class="form-control" id="employee-count-commercial"
+                                            <input type="text" class="form-control" id="employee-count-commercial"
                                                 placeholder="# of Employees">
                                             <small id="employee-count-commercial-err" class="form-text" hidden>
                                                 Required Field
@@ -384,7 +396,7 @@
                                     <div class="row g-0">Date of birth</div>
                                     <div class="row g-0">
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="month-commercial"
+                                            <input type="text" class="form-control" id="month-commercial"
                                                 placeholder="MM">
                                             <small id="month-commercial-err" class="form-text" hidden>
                                                 Required Field
@@ -392,7 +404,7 @@
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="day-commercial"
+                                            <input type="text" class="form-control" id="day-commercial"
                                                 placeholder="DD">
                                             <small id="day-commercial-err" class="form-text" hidden>
                                                 Required Field
@@ -400,7 +412,7 @@
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="year-commercial"
+                                            <input type="text" class="form-control" id="year-commercial"
                                                 placeholder="YYYY">
                                             <small id="year-commercial-err" class="form-text" hidden>
                                                 Required Field
@@ -441,7 +453,7 @@
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="zip-commercial"
+                                            <input type="text" class="form-control" id="zip-commercial"
                                                 placeholder="Zip">
                                             <small id="zip-commercial-err" class="form-text" hidden>
                                                 Required Field
@@ -458,7 +470,7 @@
                                         </div>
 
                                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
-                                            <input type="number" class="form-control" id="phone-number-commercial"
+                                            <input type="text" class="form-control" id="phone-number-commercial"
                                                 placeholder="Phone number">
                                             <small id="phone-number-commercial-err" class="form-text" hidden>
                                                 Required Field
@@ -507,21 +519,21 @@
                                     <div class="row g-0">Date of birth</div>
                                     <div class="row g-0">
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="month-life" placeholder="MM">
+                                            <input type="text" class="form-control" id="month-life" placeholder="MM">
                                             <small id="month-life-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="day-life" placeholder="DD">
+                                            <input type="text" class="form-control" id="day-life" placeholder="DD">
                                             <small id="day-life-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="year-life" placeholder="YYYY">
+                                            <input type="text" class="form-control" id="year-life" placeholder="YYYY">
                                             <small id="year-life-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
@@ -559,7 +571,7 @@
                                         </div>
 
                                         <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                            <input type="number" class="form-control" id="zip-life" placeholder="Zip">
+                                            <input type="text" class="form-control" id="zip-life" placeholder="Zip">
                                             <small id="zip-life-err" class="form-text" hidden>
                                                 Required Field
                                             </small>
@@ -575,7 +587,7 @@
                                         </div>
 
                                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
-                                            <input type="number" class="form-control" id="phone-number-life"
+                                            <input type="text" class="form-control" id="phone-number-life"
                                                 placeholder="Phone number">
                                             <small id="phone-number-life-err" class="form-text" hidden>
                                                 Required Field
@@ -625,11 +637,10 @@
                                             </fieldset>
                                             <fieldset class="dateofbirth">
                                                 <div>
-                                                    <input type="number" name="month" id="month-auto-hidden"
+                                                    <input type="text" name="month" id="month-auto-hidden"
                                                         placeholder="MM">
-                                                    <input type="number" name="day" id="day-auto-hidden"
-                                                        placeholder="DD">
-                                                    <input type="number" name="year" id="year-auto-hidden"
+                                                    <input type="text" name="day" id="day-auto-hidden" placeholder="DD">
+                                                    <input type="text" name="year" id="year-auto-hidden"
                                                         placeholder="YYYY">
                                                 </div>
                                             </fieldset>
@@ -653,12 +664,12 @@
                                             <input type="text" name="state" id="state-auto-hidden" placeholder="State"
                                                 value="OR">
                                             <label for="zip">Zip</label>
-                                            <input type="number" name="zip" id="zip-auto-hidden" placeholder="#####">
+                                            <input type="text" name="zip" id="zip-auto-hidden" placeholder="#####">
                                             <label for="email-address">Email Address</label>
                                             <input type="email" name="_replyto" id="email-address-auto-hidden"
                                                 placeholder="email@domain.tld">
                                             <label for="phone-number">Phone Number</label>
-                                            <input type="number" name="phone-number" id="phone-number-auto-hidden"
+                                            <input type="text" name="phone-number" id="phone-number-auto-hidden"
                                                 placeholder="###-###-####">
                                             <input type="hidden" name="_subject" id="email-subject-auto-hidden"
                                                 value="Registration Form Submission">
@@ -680,9 +691,9 @@
                                             </fieldset>
                                             <fieldset class="dateofbirth">
                                                 <div>
-                                                    <input type="number" name="month" id="month-home-hidden">
-                                                    <input type="number" name="day" id="day-home-hidden">
-                                                    <input type="number" name="year" id="year-home-hidden">
+                                                    <input type="text" name="month" id="month-home-hidden">
+                                                    <input type="text" name="day" id="day-home-hidden">
+                                                    <input type="text" name="year" id="year-home-hidden">
                                                 </div>
                                             </fieldset>
                                             <input type="text" name="drivers-license number"
@@ -694,10 +705,10 @@
                                             <input type="text" name="city" id="city-home-hidden" placeholder="City">
                                             <input type="text" name="state" id="state-home-hidden" placeholder="State"
                                                 value="OR">
-                                            <input type="number" name="zip" id="zip-home-hidden" placeholder="#####">
+                                            <input type="text" name="zip" id="zip-home-hidden" placeholder="#####">
                                             <input type="email" name="_replyto" id="email-address-home-hidden"
                                                 placeholder="email@domain.tld">
-                                            <input type="number" name="phone-number" id="phone-number-home-hidden"
+                                            <input type="text" name="phone-number" id="phone-number-home-hidden"
                                                 placeholder="###-###-####">
                                             <input type="hidden" name="_subject" id="email-subject-home-hidden"
                                                 value="Registration Form Submission">
@@ -721,9 +732,9 @@
                                             </fieldset>
                                             <fieldset class="dateofbirth">
                                                 <div>
-                                                    <input type="number" name="month" id="month-commercial-hidden">
-                                                    <input type="number" name="day" id="day-commercial-hidden">
-                                                    <input type="number" name="year" id="year-commercial-hidden">
+                                                    <input type="text" name="month" id="month-commercial-hidden">
+                                                    <input type="text" name="day" id="day-commercial-hidden">
+                                                    <input type="text" name="year" id="year-commercial-hidden">
                                                 </div>
                                             </fieldset>
                                             <input type="text" name="drivers-license number"
@@ -734,16 +745,15 @@
                                                 id="address-two-commercial-hidden">
                                             <input type="text" name="city" id="city-commercial-hidden">
                                             <input type="text" name="state" id="state-commercial-hidden">
-                                            <input type="number" name="zip" id="zip-commercial-hidden">
+                                            <input type="text" name="zip" id="zip-commercial-hidden">
                                             <input type="text" name="annual-reciepts"
                                                 id="annual-reciepts-commercial-hidden">
-                                            <input type="number" name="federal-id-number"
+                                            <input type="text" name="federal-id-number"
                                                 id="federal-id-number-commercial-hidden">
-                                            <input type="number" name="employee-count"
+                                            <input type="text" name="employee-count"
                                                 id="employee-count-commercial-hidden">
                                             <input type="email" name="_replyto" id="email-address-commercial-hidden">
-                                            <input type="number" name="phone-number"
-                                                id="phone-number-commercial-hidden">
+                                            <input type="text" name="phone-number" id="phone-number-commercial-hidden">
                                         </fieldset>
                                         <input type="submit" id="commercial-hidden-form-submit" value="Register">
                                     </form>
@@ -764,9 +774,9 @@
                                             <fieldset class="dateofbirth">
                                                 <legend>Date of Birth</legend>
                                                 <div>
-                                                    <input type="number" name="month" id="month-life-hidden">
-                                                    <input type="number" name="day" id="day-life-hidden">
-                                                    <input type="number" name="year" id="year-life-hidden">
+                                                    <input type="text" name="month" id="month-life-hidden">
+                                                    <input type="text" name="day" id="day-life-hidden">
+                                                    <input type="text" name="year" id="year-life-hidden">
                                                 </div>
                                             </fieldset>
                                             <input type="text" name="drivers-license number"
@@ -775,9 +785,9 @@
                                             <input type="text" name="address-two-life" id="address-two-life-hidden">
                                             <input type="text" name="city" id="city-life-hidden">
                                             <input type="text" name="state" id="state-life-hidden">
-                                            <input type="number" name="zip" id="zip-life-hidden">
+                                            <input type="text" name="zip" id="zip-life-hidden">
                                             <input type="email" name="_replyto" id="email-address-life-hidden">
-                                            <input type="number" name="phone-number" id="phone-number-life-hidden">
+                                            <input type="text" name="phone-number" id="phone-number-life-hidden">
                                             <textarea rows="2" name="note" id="note-life-hidden"></textarea>
                                             <input type="hidden" name="_subject" id="email-subject-life-hidden"
                                                 value="Registration Form Submission">
@@ -799,25 +809,21 @@
                         <div class="col-0 col-sm-2"></div>
                     </div>
                     <div class="row provider-row g-0">
-                        <div class="row g-0" id="logos">
-                            <img class="brand-logo" src="img/symmetry.png" />
-                            <img class="brand-logo" src="img/stillwater.png" />
-                            <img class="brand-logo" src="img/kemper.png" />
-                            <img class="brand-logo" src="img/branch.png" />
-                        </div>
-                        <div class="row g-0" id="logos">
-                            <img class="brand-logo" src="img/Nationwide-Logo.png" />
-                            <img class="brand-logo" src="img/natgen.png" />
-                            <img class="brand-logo" src="img/encompass-i.png" />
-                            <img class="brand-logo" src="img/Allstate-Logo.png" />
-                        </div>
+                        <img class="brand-logo sym-logo" src="img/symmetry.png" />
+                        <img class="brand-logo still-logo" src="img/stillwater.png" />
+                        <img class="brand-logo nation-logo" src="img/Nationwide-Logo.png" />
+                        <img class="brand-logo branch-logo" src="img/branch.png" />
+                        <img class="brand-logo kemper-logo" src="img/kemper.png" />
+                        <img class="brand-logo natgen-logo" src="img/natgen.png" />
+                        <img class="brand-logo encompass-logo" src="img/encompass-i.png" />
+                        <img class="brand-logo allstate-logo" src="img/Allstate-Logo.png" />
                     </div>
                     <!-- Javier's face -->
                     <div class="row sectionpadding g-0">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6" id="contact-img-container">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6" id="contact-img-container">
                             <img id="contact-img" src="img/owner_picture.png" />
                         </div>
-                        <div class="col col-6 col-sm-6 col-md-6 col-lg-6 p-2" id="javiers-face-text">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-2" id="javiers-face-text">
                             Javier's Gurantee:<br>
                             <i>"I never stop working to get you the best deals!"</i>
                         </div>
@@ -839,7 +845,7 @@
                     <div class="row py-5 g-0" id="testimonials">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="placeholder">
                             <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-5"
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5"
                                     id="testimonial-container-left">
                                     <div class="row text-center testimonial-copy">
                                         <div id="testimonial-name">Nicholas</div>
@@ -864,7 +870,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-7"
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7"
                                     id="testimonial-container-right">
                                     <img src="img/testimonials.png" alt="owner_picture" id="testimonial-img">
                                 </div>
@@ -893,7 +899,7 @@
                             working
                             for
                             you. </br>
-                            <img src="img/family-first-insurance.png" />
+                            <img id="botimg" src="img/family-first-insurance.png" />
                         </div>
                     </div>
                 </div>
