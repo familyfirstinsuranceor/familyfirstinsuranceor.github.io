@@ -64,25 +64,26 @@
                             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                                 <button class="nav-link active" id="nav-auto-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-auto" type="button" role="tab" aria-controls="nav-auto"
-                                    aria-selected="true">
+                                    aria-selected="true" onclick="tabClick('Auto')">
                                     <div class="auto-tab-text">Auto</div>
                                     <div class="auto-tab-img"><img src="img/car-hatchback.png" /></div>
                                 </button>
                                 <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                    aria-selected="false">
+                                    aria-selected="false" onclick="tabClick('Home')">
                                     <div class="home-tab-text">Home</div>
                                     <div class="home-tab-img"><img src="img/home.png" /></div>
                                 </button>
                                 <button class="nav-link" id="nav-commercial-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-commercial" type="button" role="tab"
-                                    aria-controls="nav-commercial" aria-selected="false">
+                                    aria-controls="nav-commercial" aria-selected="false"
+                                    onclick="tabClick('Commercial')">
                                     <div class="commercial-tab-text">Commercial</div>
                                     <div class="commercial-tab-img"><img src="img/domain.png" /></div>
                                 </button>
                                 <button class="nav-link" id="nav-life-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-life" type="button" role="tab" aria-controls="nav-life"
-                                    aria-selected="false">
+                                    aria-selected="false" onclick="tabClick('Life')">
                                     <div class="life-tab-text">Life</div>
                                     <div class="life-tab-img"><img src="img/account-heart.png" /></div>
                                 </button>
@@ -928,8 +929,7 @@
                     <div class="text-center">
                         <div class="row py-1">
                             <div class="text-center">
-                                Family First Insurance • <a
-                                    href="https://www.google.com/maps/place/1419+Parkside+Ct,+Newberg,+OR+97132/@45.3107777,-122.9799679,17z/data=!3m1!4b1!4m5!3m4!1s0x54954029b95f1e9b:0xd2b7578059ce72a9!8m2!3d45.3107777!4d-122.9799679">1419
+                                Family First Insurance • <a href="javascript:address();">1419
                                     Parkside Ct Newberg, OR 97132
                                 </a> • Phone: 503-313-1942 <br> Fax: 503-487-1164 • Email:
                                 javierdelaobailon@gmail.com<br>Javier De La O Bailon
@@ -942,7 +942,7 @@
                         </div>
                         <div class="row py-1">
                             <div class="text-center">
-                                <a href="https://www.familyfirstinsurancejarbgllc.com/index.html">About Us</a>
+                                <a href="javascript:aboutUs();">About Us</a>
                             </div>
                         </div>
                     </div>
@@ -951,7 +951,6 @@
             <div class="col-0 col-sm-1 col-lg-2" id="footer-filler"></div>
         </div>
     </div>
-
 </body>
 
 </html>
