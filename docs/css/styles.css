@@ -68,6 +68,7 @@ body {
 #testimonial-text {
   align-self: center;
   justify-content: center;
+  color: #cccccc;
   font-size: 2em;
 }
 
@@ -138,6 +139,10 @@ body {
   align-items: center;
 }
 
+.sectionmargin {
+  margin-bottom: 64px;
+}
+
 #company-logo {
   align-self: center;
   width: stretch;
@@ -166,6 +171,10 @@ p span {
 
 .navigation-tabs {
   display: inline-block
+}
+
+#brand-logos-row {
+  margin-bottom: 64px;
 }
 
 #footer-filler,
@@ -301,6 +310,12 @@ p span {
 
 .provider-row {
   background-color: #333333;
+  align-items: center;
+  justify-content: center;
+}
+
+.provider-row-brands {
+  background-color: #444444;
   align-items: center;
   justify-content: center;
 }
