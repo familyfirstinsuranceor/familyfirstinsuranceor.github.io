@@ -20,6 +20,10 @@ function submitAuto() {
     let email = document.getElementById("email-address-auto").value
     let valid = true
 
+    gtag('event', 'formSubmit_click', {
+        'form_type': 'Auto'
+    })
+
     document.getElementById("first-name-auto-err").hidden = true
     document.getElementById("last-name-auto-err").hidden = true
     if (!isValidNames(fName, mName, lName)) {
@@ -68,6 +72,9 @@ function submitAuto() {
     }
     if (!valid) return
 
+    gtag('event', 'formSubmit_submission', {
+        'form_type': 'Auto'
+    })
 
     document.getElementById("first-name-auto-hidden").value = fName
     document.getElementById("middle-name-auto-hidden").value = mName
@@ -104,6 +111,10 @@ function submitHome() {
     let phone = document.getElementById("phone-number-home").value
     let email = document.getElementById("email-address-home").value
     let valid = true
+
+    gtag('event', 'formSubmit_click', {
+        'form_type': 'Home'
+    })
 
     document.getElementById("first-name-home-err").hidden = true
     document.getElementById("last-name-home-err").hidden = true
@@ -153,6 +164,10 @@ function submitHome() {
     }
     if (!valid) return
 
+    gtag('event', 'formSubmit_submission', {
+        'form_type': 'Home'
+    })
+
     document.getElementById("first-name-home-hidden").value = fName
     document.getElementById("middle-name-home-hidden").value = mName
     document.getElementById("last-name-home-hidden").value = lName
@@ -190,6 +205,10 @@ function submitCommercial() {
     let fedID = document.getElementById("federal-id-number-commercial").value
     let employeeCount = document.getElementById("employee-count-commercial").value
     let valid = true
+
+    gtag('event', 'formSubmit_click', {
+        'form_type': 'Commercial'
+    })
 
     document.getElementById("business-name-commercial-err").hidden = true
     if (bName == "") {
@@ -254,6 +273,10 @@ function submitCommercial() {
     }
     if (!valid) return
 
+    gtag('event', 'formSubmit_submission', {
+        'form_type': 'Commercial'
+    })
+
     document.getElementById("business-name-commercial-hidden").value = bName
     document.getElementById("first-name-commercial-hidden").value = fName
     document.getElementById("middle-name-commercial-hidden").value = mName
@@ -292,6 +315,10 @@ function submitLife() {
     let phone = document.getElementById("phone-number-life").value
     let email = document.getElementById("email-address-life").value
     let valid = true
+
+    gtag('event', 'formSubmit_click', {
+        'form_type': 'Life'
+    })
 
     document.getElementById("first-name-life-err").hidden = true
     document.getElementById("last-name-life-err").hidden = true
@@ -340,6 +367,10 @@ function submitLife() {
         valid = false
     }
     if (!valid) return
+
+    gtag('event', 'formSubmit_submission', {
+        'form_type': 'Life'
+    })
 
     document.getElementById("first-name-life-hidden").value = fName
     document.getElementById("middle-name-life-hidden").value = mName
@@ -404,4 +435,27 @@ function isValidVIN(viNumber) {
         if (viNumber.length == 17) return true
     }
     return false
+}
+
+function address() {
+    gtag('event', "link_click", {
+        'page_from': 'Home',
+        'page_to': "Google Maps",
+    })
+
+    window.location.href = "https://www.google.com/maps/place/1419+Parkside+Ct,+Newberg,+OR+97132/@45.3107777,-122.9799679,17z/data=!3m1!4b1!4m5!3m4!1s0x54954029b95f1e9b:0xd2b7578059ce72a9!8m2!3d45.3107777!4d-122.9799679";
+}
+
+function aboutUs() {
+    gtag('event', "link_click", {
+        'page_from': 'Home',
+        'page_to': "About Us",
+    })
+
+    window.location.href = "https://www.familyfirstinsurancejarbgllc.com/index.html";
+}
+function tabClick(tab) {
+    gtag('event', 'tab_click', {
+        'tab': tab
+    })
 }
