@@ -29,6 +29,7 @@ body {
   max-width: 3.5em;
   max-height: 3.5em;
   padding: 16px;
+  padding-right: 0px;
 }
 
 #phone-image-navbar {
@@ -65,7 +66,7 @@ body {
   font-size: 3em;
 }
 
-#testimonial-text {
+.testimonial-text {
   align-self: center;
   justify-content: center;
   color: #cccccc;
@@ -122,7 +123,7 @@ body {
   font-size: 0.3em;
 }
 
-#get-your-quote {
+.btn {
   background-color: #035370 !important;
   color: white !important;
 }
@@ -141,12 +142,6 @@ body {
 
 .sectionmargin {
   margin-bottom: 64px;
-}
-
-#company-logo {
-  align-self: center;
-  width: stretch;
-  height: fit-content;
 }
 
 p span {
@@ -207,8 +202,6 @@ p span {
   justify-content: center;
 }
 
-#star {}
-
 #testimonial-container-left {
   display: flex;
   flex-direction: column;
@@ -221,10 +214,6 @@ p span {
   flex-direction: column;
   justify-content: center;
 
-}
-
-.btn-primary {
-  background-color: rgb(93, 152, 233);
 }
 
 #testimonials {
@@ -257,54 +246,17 @@ p span {
 
 #top-call-us {
   font-size: 0.5em;
-  white-space: nowrap;
   padding: 16px;
+  float: right;
 }
 
-@media screen and (min-width: 576px) {
-  .auto-tab-img {
-    display: none;
-  }
-
-  .home-tab-img {
-    display: none;
-  }
-
-  .life-tab-img {
-    display: none;
-  }
-
-  .commercial-tab-img {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .auto-tab-text {
-    display: none;
-  }
-
-  .home-tab-text {
-    display: none;
-  }
-
-  .life-tab-text {
-    display: none;
-  }
-
-  .commercial-tab-text {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #top-call-us {
-    display: none;
-  }
+.mobile-label {
+  font-size: 1.5em;
 }
 
 #top-company-name {
   font-size: 0.6em;
+  float: left;
   white-space: nowrap;
 }
 
@@ -359,4 +311,70 @@ input[type=number] {
 
 #botimg {
   margin-top: 64px;
+}
+
+#flag-icon {
+  max-width: 30px;
+  max-height: 15px;
+  justify-content: top;
+}
+
+#flag-row {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.5em;
+  white-space: nowrap;
+}
+
+
+@media screen and (min-width: 576px) {
+  .tab-img {
+    display: none;
+  }
+
+  .mobile-label {
+    display: none;
+  }
+
+  #business-logo-navbar-small {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tab-text {
+    display: none;
+  }
+
+  #top-company-name {
+    display: none;
+  }
+
+  #business-logo-navbar-small {
+    max-width: 3.5em;
+    max-height: 3.5em;
+    padding: 16px;
+    font-size: 0.6em;
+    white-space: nowrap;
+  }
+
+  .bannernumber {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #top-call-us,
+  #top-call-us-column {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .bannernumber {
+    font-size: 1.0em;
+  }
 }
