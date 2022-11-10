@@ -404,7 +404,7 @@ function isValidDOB(month, day, year) {
 }
 
 function isAlphaNumeric(str) {
-    var code, i, len;
+    let code, i, len;
 
     for (i = 0, len = str.length; i < len; i++) {
         code = str.charCodeAt(i);
@@ -458,4 +458,664 @@ function tabClick(tab) {
     gtag('event', 'tab_click', {
         'tab': tab
     })
+}
+
+function toSpanish() {
+
+    let containerArray = [
+        // Quote Banner Text
+        document.getElementById("quote-text"),
+
+        // Tabs
+        document.getElementById("auto-tab-text"),
+        document.getElementById("home-tab-text"),
+        document.getElementById("commercial-tab-text"),
+        document.getElementById("life-tab-text"),
+
+        // Auto
+        document.getElementById("auto-section-label"),
+        document.getElementById("vehicle-info"),
+        document.getElementById("auto-name-label"),
+        document.getElementById("auto-dob-label"),
+        document.getElementById("auto-address-label"),
+        document.getElementById("auto-get-your-quote"),
+
+        // Home
+        document.getElementById("home-section-label"),
+        document.getElementById("home-name-label"),
+        document.getElementById("home-dob-label"),
+        document.getElementById("home-address-label"),
+        document.getElementById("home-get-your-quote"),
+
+        // Commercial
+        document.getElementById("commercial-section-label"),
+        document.getElementById("commercial-business-label"),
+        document.getElementById("commercial-name-label"),
+        document.getElementById("commercial-dob-label"),
+        document.getElementById("commercial-address-label"),
+        document.getElementById("commercial-get-your-quote"),
+
+        // Life
+        document.getElementById("life-section-label"),
+        document.getElementById("life-name-label"),
+        document.getElementById("life-dob-label"),
+        document.getElementById("life-address-label"),
+        document.getElementById("life-get-your-quote"),
+        document.getElementById("life-history-label"),
+
+        // Below Forms
+        document.getElementById("providers-text-line"),
+        document.getElementById("javiers-face-text"),
+        document.getElementById("service-promise"),
+
+        // Testimonials
+        document.getElementById("testimonial-text-nic"),
+        document.getElementById("testimonial-text-brandon"),
+        document.getElementById("testimonial-text-jamie"),
+
+        // Call Today
+        document.getElementById("want-to-talk"),
+        document.getElementById("call-today"),
+
+        // Wall of Text
+        document.getElementById("info-text"),
+
+        // Footer
+        document.getElementById("copyright"),
+    ]
+    let spanishTextArray = [
+        // Tabs and Above
+        "<p><span>Solicitar</span><span>presupuesto</span></p>", // Request a Quote
+        "Coche", // Car
+        "Hogar", // Home
+        "Negocio", // Business
+        "Vida", // Life
+
+        // Auto
+        "Seguro de auto", // Car Insurance
+        "Información del conductor", // Driver Information
+        "Nombre", // Name
+        "Fecha de nacimiento", // Date of Birth
+        "Dirección", // Address
+        "Obtenga su cotización", // Get Your Quote
+
+        // Home
+        "Seguro de Hogar", // Home Insurance
+        "Nombre", // Name
+        "Fecha de nacimiento", // Date of Birth
+        "Dirección", // Address
+        "Obtenga su cotización", // Get Your Quote
+
+        // Commercial
+        "Seguro de negocio", // Business Insurance
+        "Información de negocios", // Business Information
+        "Nombre", // Name
+        "Fecha de nacimiento", // Date of Birth
+        "Dirección", // Address
+        "Obtenga su cotización", // Get Your Quote
+
+        // Life
+        "Seguro de vida", // Life Insurance
+        "Nombre", // Name
+        "Fecha de nacimiento", // Date of Birth
+        "Dirección", // Address
+        "Obtenga su cotización", // Get Your Quote
+        "Historial médico", // Medical History
+
+        // Below Forms
+        "Seguro de calidad a través de estos excelentes proveedores", // Providers Line
+        "Garantía de Javier:<br> <i>'¡Nunca dejo de trabajar para conseguirte las mejores ofertas!'</i>", // Gurantee
+        "Servicio de 5 estrellas garantizado", // 5 Star Service
+
+        // Testimonials
+        "¡Ahorré un montón de dinero con el seguro que Javier me encontró!",
+        "Javier nunca deja de trabajar duro para proporcionar el mejor servicio en la ciudad",
+        "Siempre puedo comunicarme con Javier si tengo preguntas sobre mi póliza. El servicio personalizado significa mucho",
+
+        // Contact us
+        "¿Querer hablar?",
+        "¡Llama hoy!",
+
+        // Info Text
+        'Trabajando arduamente en el corazón de Newberg, <b> Family First Insurance </b> ha brindado una experiencia excepcional al cliente al comprar y mantener un seguro durante muchos años. Una y otra vez, Javier puede brindar el toque personal que falta en la vida de la mayoría de los compradores. <br><br><b> Family First Insurance </b> nunca dejará de trabajar para usted. </br> <img id="botimg" src="img/family-first-insurance.png" />', // wall of text
+        "Copyright © 2022. Todos los derechos reservados.", // Copyright
+    ]
+    let placeholderContainerArray = [
+        // Auto
+        document.getElementById("drivers-license-auto"),
+        document.getElementById("first-name-auto"),
+        document.getElementById("middle-name-auto"),
+        document.getElementById("last-name-auto"),
+        document.getElementById("address-one-auto"),
+        document.getElementById("address-two-auto"),
+        document.getElementById("city-auto"),
+        document.getElementById("state-auto"),
+        document.getElementById("zip-auto"),
+        document.getElementById("email-address-auto"),
+        document.getElementById("phone-number-auto"),
+
+        // Home
+        document.getElementById("drivers-license-home"),
+        document.getElementById("first-name-home"),
+        document.getElementById("middle-name-home"),
+        document.getElementById("last-name-home"),
+        document.getElementById("address-one-home"),
+        document.getElementById("address-two-home"),
+        document.getElementById("city-home"),
+        document.getElementById("state-home"),
+        document.getElementById("zip-home"),
+        document.getElementById("email-address-home"),
+        document.getElementById("phone-number-home"),
+
+        // Commercial
+        document.getElementById("drivers-license-commercial"),
+        document.getElementById("first-name-commercial"),
+        document.getElementById("middle-name-commercial"),
+        document.getElementById("last-name-commercial"),
+        document.getElementById("address-one-commercial"),
+        document.getElementById("address-two-commercial"),
+        document.getElementById("city-commercial"),
+        document.getElementById("state-commercial"),
+        document.getElementById("zip-commercial"),
+        document.getElementById("email-address-commercial"),
+        document.getElementById("phone-number-commercial"),
+        document.getElementById("business-name-commercial"),
+        document.getElementById("federal-id-number-commercial"),
+        document.getElementById("annual-reciepts-commercial"),
+        document.getElementById("employee-count-commercial"),
+
+        // Life
+        document.getElementById("drivers-license-life"),
+        document.getElementById("first-name-life"),
+        document.getElementById("middle-name-life"),
+        document.getElementById("last-name-life"),
+        document.getElementById("address-one-life"),
+        document.getElementById("address-two-life"),
+        document.getElementById("city-life"),
+        document.getElementById("state-life"),
+        document.getElementById("zip-life"),
+        document.getElementById("email-address-life"),
+        document.getElementById("phone-number-life"),
+
+    ]
+    let spanishPlaceholderText = [
+        // Auto
+        "Número de licencia", // licence #
+        "Primero", // First
+        "Medio", // Middle
+        "Último", // Last
+        "Dirección Línea Uno", // Address line 1
+        "Línea de dirección 2", // Address line 2
+        "Ciudad", // City
+        "Estado", // State
+        "Código postal", // Zip Code
+        "Correo electrónico", // Email
+        "Número de teléfono", // Phone Number
+
+        // Home
+        "Número de licencia", // licence #
+        "Primero", // First
+        "Medio", // Middle
+        "Último", // Last
+        "Dirección Línea Uno", // Address line 1
+        "Línea de dirección 2", // Address line 2
+        "Ciudad", // City
+        "Estado", // State
+        "Código postal", // Zip Code
+        "Correo electrónico", // Email
+        "Número de teléfono", // Phone Number
+
+        // Commercial
+        "Número de licencia", // licence #
+        "Primero", // First
+        "Medio", // Middle
+        "Último", // Last
+        "Dirección Línea Uno", // Address line 1
+        "Línea de dirección 2", // Address line 2
+        "Ciudad", // City
+        "Estado", // State
+        "Código postal", // Zip Code
+        "Correo electrónico", // Email
+        "Número de teléfono", // Phone Number
+        "Nombre del Negocio", // Business Name
+        "Número de identificación federal", // Federal ID Number
+        "Recibos Anuales", // Annual Reciepts
+        "Número de empleados", // Number of Employees
+
+        // Life
+        "Número de licencia", // licence #
+        "Primero", // First
+        "Medio", // Middle
+        "Último", // Last
+        "Dirección Línea Uno", // Address line 1
+        "Línea de dirección 2", // Address line 2
+        "Ciudad", // City
+        "Estado", // State
+        "Código postal", // Zip Code
+        "Correo electrónico", // Email
+        "Número de teléfono", // Phone Number
+    ]
+    let errorContainerArray = [
+        // Auto
+        document.getElementById("first-name-auto-err"),
+        document.getElementById("last-name-auto-err"),
+        document.getElementById("month-auto-err"),
+        document.getElementById("day-auto-err"),
+        document.getElementById("year-auto-err"),
+        document.getElementById("address-one-auto-err"),
+        document.getElementById("city-auto-err"),
+        document.getElementById("state-auto-err"),
+        document.getElementById("zip-auto-err"),
+        document.getElementById("email-address-auto-err"),
+        document.getElementById("phone-number-auto-err"),
+
+        // Home
+        document.getElementById("first-name-home-err"),
+        document.getElementById("last-name-home-err"),
+        document.getElementById("month-home-err"),
+        document.getElementById("day-home-err"),
+        document.getElementById("year-home-err"),
+        document.getElementById("address-one-home-err"),
+        document.getElementById("city-home-err"),
+        document.getElementById("state-home-err"),
+        document.getElementById("zip-home-err"),
+        document.getElementById("email-address-home-err"),
+        document.getElementById("phone-number-home-err"),
+
+        // Commercial
+        document.getElementById("first-name-home-err"),
+        document.getElementById("last-name-home-err"),
+        document.getElementById("month-home-err"),
+        document.getElementById("day-home-err"),
+        document.getElementById("year-home-err"),
+        document.getElementById("address-one-home-err"),
+        document.getElementById("city-home-err"),
+        document.getElementById("state-home-err"),
+        document.getElementById("zip-home-err"),
+        document.getElementById("email-address-home-err"),
+        document.getElementById("phone-number-home-err"),
+        document.getElementById("business-name-commercial-err"),
+        document.getElementById("federal-id-number-commercial-err"),
+        document.getElementById("annual-reciepts-commercial-err"),
+        document.getElementById("employee-count-commercial-err"),
+
+        // Life
+        document.getElementById("first-name-life-err"),
+        document.getElementById("last-name-life-err"),
+        document.getElementById("month-life-err"),
+        document.getElementById("day-life-err"),
+        document.getElementById("year-life-err"),
+        document.getElementById("address-one-life-err"),
+        document.getElementById("city-life-err"),
+        document.getElementById("state-life-err"),
+        document.getElementById("zip-life-err"),
+        document.getElementById("email-address-life-err"),
+        document.getElementById("phone-number-life-err"),
+    ]
+    let spanishErrorText = "Campo requerido" // Field Required
+
+    for (let i = 0; i < containerArray.length; i++) {
+        containerArray[i].innerHTML = spanishTextArray[i];
+    }
+    for (let i = 0; i < placeholderContainerArray.length; i++) {
+        placeholderContainerArray[i].placeholder = spanishPlaceholderText[i]
+    }
+    for (let i = 0; i < errorContainerArray.length; i++) {
+        errorContainerArray[i].innerHTML = spanishErrorText
+    }
+
+    document.getElementById("flag-row").innerHTML = '<div class="row"><div class="col-12"><img id="flag-icon" src="img/es-flag.png" /></div><div class="col-12">es</div></div>'
+}
+
+let holdingTextArray = []
+let holdingPlaceholderArray = []
+
+function toEnglish() {
+    let errorContainerArray = [
+        // Auto
+        document.getElementById("first-name-auto-err"),
+        document.getElementById("last-name-auto-err"),
+        document.getElementById("month-auto-err"),
+        document.getElementById("day-auto-err"),
+        document.getElementById("year-auto-err"),
+        document.getElementById("address-one-auto-err"),
+        document.getElementById("city-auto-err"),
+        document.getElementById("state-auto-err"),
+        document.getElementById("zip-auto-err"),
+        document.getElementById("email-address-auto-err"),
+        document.getElementById("phone-number-auto-err"),
+
+        // Home
+        document.getElementById("first-name-home-err"),
+        document.getElementById("last-name-home-err"),
+        document.getElementById("month-home-err"),
+        document.getElementById("day-home-err"),
+        document.getElementById("year-home-err"),
+        document.getElementById("address-one-home-err"),
+        document.getElementById("city-home-err"),
+        document.getElementById("state-home-err"),
+        document.getElementById("zip-home-err"),
+        document.getElementById("email-address-home-err"),
+        document.getElementById("phone-number-home-err"),
+
+        // Commercial
+        document.getElementById("first-name-home-err"),
+        document.getElementById("last-name-home-err"),
+        document.getElementById("month-home-err"),
+        document.getElementById("day-home-err"),
+        document.getElementById("year-home-err"),
+        document.getElementById("address-one-home-err"),
+        document.getElementById("city-home-err"),
+        document.getElementById("state-home-err"),
+        document.getElementById("zip-home-err"),
+        document.getElementById("email-address-home-err"),
+        document.getElementById("phone-number-home-err"),
+        document.getElementById("business-name-commercial-err"),
+        document.getElementById("federal-id-number-commercial-err"),
+        document.getElementById("annual-reciepts-commercial-err"),
+        document.getElementById("employee-count-commercial-err"),
+
+        // Life
+        document.getElementById("first-name-life-err"),
+        document.getElementById("last-name-life-err"),
+        document.getElementById("month-life-err"),
+        document.getElementById("day-life-err"),
+        document.getElementById("year-life-err"),
+        document.getElementById("address-one-life-err"),
+        document.getElementById("city-life-err"),
+        document.getElementById("state-life-err"),
+        document.getElementById("zip-life-err"),
+        document.getElementById("email-address-life-err"),
+        document.getElementById("phone-number-life-err"),
+    ]
+    let placeholderContainerArray = [
+        // Auto
+        document.getElementById("drivers-license-auto"),
+        document.getElementById("first-name-auto"),
+        document.getElementById("middle-name-auto"),
+        document.getElementById("last-name-auto"),
+        document.getElementById("address-one-auto"),
+        document.getElementById("address-two-auto"),
+        document.getElementById("city-auto"),
+        document.getElementById("state-auto"),
+        document.getElementById("zip-auto"),
+        document.getElementById("email-address-auto"),
+        document.getElementById("phone-number-auto"),
+
+        // Home
+        document.getElementById("drivers-license-home"),
+        document.getElementById("first-name-home"),
+        document.getElementById("middle-name-home"),
+        document.getElementById("last-name-home"),
+        document.getElementById("address-one-home"),
+        document.getElementById("address-two-home"),
+        document.getElementById("city-home"),
+        document.getElementById("state-home"),
+        document.getElementById("zip-home"),
+        document.getElementById("email-address-home"),
+        document.getElementById("phone-number-home"),
+
+        // Commercial
+        document.getElementById("drivers-license-commercial"),
+        document.getElementById("first-name-commercial"),
+        document.getElementById("middle-name-commercial"),
+        document.getElementById("last-name-commercial"),
+        document.getElementById("address-one-commercial"),
+        document.getElementById("address-two-commercial"),
+        document.getElementById("city-commercial"),
+        document.getElementById("state-commercial"),
+        document.getElementById("zip-commercial"),
+        document.getElementById("email-address-commercial"),
+        document.getElementById("phone-number-commercial"),
+        document.getElementById("business-name-commercial"),
+        document.getElementById("federal-id-number-commercial"),
+        document.getElementById("annual-reciepts-commercial"),
+        document.getElementById("employee-count-commercial"),
+
+        // Life
+        document.getElementById("drivers-license-life"),
+        document.getElementById("first-name-life"),
+        document.getElementById("middle-name-life"),
+        document.getElementById("last-name-life"),
+        document.getElementById("address-one-life"),
+        document.getElementById("address-two-life"),
+        document.getElementById("city-life"),
+        document.getElementById("state-life"),
+        document.getElementById("zip-life"),
+        document.getElementById("email-address-life"),
+        document.getElementById("phone-number-life"),
+
+    ]
+    let containerArray = [
+        // Quote Banner Text
+        document.getElementById("quote-text"),
+
+        // Tabs
+        document.getElementById("auto-tab-text"),
+        document.getElementById("home-tab-text"),
+        document.getElementById("commercial-tab-text"),
+        document.getElementById("life-tab-text"),
+
+        // Auto
+        document.getElementById("auto-section-label"),
+        document.getElementById("vehicle-info"),
+        document.getElementById("auto-name-label"),
+        document.getElementById("auto-dob-label"),
+        document.getElementById("auto-address-label"),
+        document.getElementById("auto-get-your-quote"),
+
+        // Home
+        document.getElementById("home-section-label"),
+        document.getElementById("home-name-label"),
+        document.getElementById("home-dob-label"),
+        document.getElementById("home-address-label"),
+        document.getElementById("home-get-your-quote"),
+
+        // Commercial
+        document.getElementById("commercial-section-label"),
+        document.getElementById("commercial-business-label"),
+        document.getElementById("commercial-name-label"),
+        document.getElementById("commercial-dob-label"),
+        document.getElementById("commercial-address-label"),
+        document.getElementById("commercial-get-your-quote"),
+
+        // Life
+        document.getElementById("life-section-label"),
+        document.getElementById("life-name-label"),
+        document.getElementById("life-dob-label"),
+        document.getElementById("life-address-label"),
+        document.getElementById("life-get-your-quote"),
+        document.getElementById("life-history-label"),
+
+        // Below Forms
+        document.getElementById("providers-text-line"),
+        document.getElementById("javiers-face-text"),
+        document.getElementById("service-promise"),
+
+        // Testimonials
+        document.getElementById("testimonial-text-nic"),
+        document.getElementById("testimonial-text-brandon"),
+        document.getElementById("testimonial-text-jamie"),
+
+        // Call Today
+        document.getElementById("want-to-talk"),
+        document.getElementById("call-today"),
+
+        // Wall of Text
+        document.getElementById("info-text"),
+
+        // Footer
+        document.getElementById("copyright"),
+    ]
+
+    for (let i = 0; i < containerArray.length; i++) {
+        containerArray[i].innerHTML = holdingTextArray[i];
+    }
+    for (let i = 0; i < placeholderContainerArray.length; i++) {
+        placeholderContainerArray[i].placeholder = holdingPlaceholderArray[i]
+    }
+    for (let i = 0; i < errorContainerArray.length; i++) {
+        errorContainerArray[i].innerHTML = "Field Required"
+    }
+
+    document.getElementById("flag-row").innerHTML = '<div class="row"><div class="col-12"><img id="flag-icon" src="img/en-flag.png" /></div><div class="col-12">en</div></div>'
+
+}
+
+function init() {
+    let placeholderContainerArray = [
+        // Auto
+        document.getElementById("drivers-license-auto"),
+        document.getElementById("first-name-auto"),
+        document.getElementById("middle-name-auto"),
+        document.getElementById("last-name-auto"),
+        document.getElementById("address-one-auto"),
+        document.getElementById("address-two-auto"),
+        document.getElementById("city-auto"),
+        document.getElementById("state-auto"),
+        document.getElementById("zip-auto"),
+        document.getElementById("email-address-auto"),
+        document.getElementById("phone-number-auto"),
+
+        // Home
+        document.getElementById("drivers-license-home"),
+        document.getElementById("first-name-home"),
+        document.getElementById("middle-name-home"),
+        document.getElementById("last-name-home"),
+        document.getElementById("address-one-home"),
+        document.getElementById("address-two-home"),
+        document.getElementById("city-home"),
+        document.getElementById("state-home"),
+        document.getElementById("zip-home"),
+        document.getElementById("email-address-home"),
+        document.getElementById("phone-number-home"),
+
+        // Commercial
+        document.getElementById("drivers-license-commercial"),
+        document.getElementById("first-name-commercial"),
+        document.getElementById("middle-name-commercial"),
+        document.getElementById("last-name-commercial"),
+        document.getElementById("address-one-commercial"),
+        document.getElementById("address-two-commercial"),
+        document.getElementById("city-commercial"),
+        document.getElementById("state-commercial"),
+        document.getElementById("zip-commercial"),
+        document.getElementById("email-address-commercial"),
+        document.getElementById("phone-number-commercial"),
+        document.getElementById("business-name-commercial"),
+        document.getElementById("federal-id-number-commercial"),
+        document.getElementById("annual-reciepts-commercial"),
+        document.getElementById("employee-count-commercial"),
+
+        // Life
+        document.getElementById("drivers-license-life"),
+        document.getElementById("first-name-life"),
+        document.getElementById("middle-name-life"),
+        document.getElementById("last-name-life"),
+        document.getElementById("address-one-life"),
+        document.getElementById("address-two-life"),
+        document.getElementById("city-life"),
+        document.getElementById("state-life"),
+        document.getElementById("zip-life"),
+        document.getElementById("email-address-life"),
+        document.getElementById("phone-number-life"),
+
+    ]
+    let containerArray = [
+        // Quote Banner Text
+        document.getElementById("quote-text"),
+
+        // Tabs
+        document.getElementById("auto-tab-text"),
+        document.getElementById("home-tab-text"),
+        document.getElementById("commercial-tab-text"),
+        document.getElementById("life-tab-text"),
+
+        // Auto
+        document.getElementById("auto-section-label"),
+        document.getElementById("vehicle-info"),
+        document.getElementById("auto-name-label"),
+        document.getElementById("auto-dob-label"),
+        document.getElementById("auto-address-label"),
+        document.getElementById("auto-get-your-quote"),
+
+        // Home
+        document.getElementById("home-section-label"),
+        document.getElementById("home-name-label"),
+        document.getElementById("home-dob-label"),
+        document.getElementById("home-address-label"),
+        document.getElementById("home-get-your-quote"),
+
+        // Commercial
+        document.getElementById("commercial-section-label"),
+        document.getElementById("commercial-business-label"),
+        document.getElementById("commercial-name-label"),
+        document.getElementById("commercial-dob-label"),
+        document.getElementById("commercial-address-label"),
+        document.getElementById("commercial-get-your-quote"),
+
+        // Life
+        document.getElementById("life-section-label"),
+        document.getElementById("life-name-label"),
+        document.getElementById("life-dob-label"),
+        document.getElementById("life-address-label"),
+        document.getElementById("life-get-your-quote"),
+        document.getElementById("life-history-label"),
+
+        // Below Forms
+        document.getElementById("providers-text-line"),
+        document.getElementById("javiers-face-text"),
+        document.getElementById("service-promise"),
+
+        // Testimonials
+        document.getElementById("testimonial-text-nic"),
+        document.getElementById("testimonial-text-brandon"),
+        document.getElementById("testimonial-text-jamie"),
+
+        // Call Today
+        document.getElementById("want-to-talk"),
+        document.getElementById("call-today"),
+
+        // Wall of Text
+        document.getElementById("info-text"),
+
+        // Footer
+        document.getElementById("copyright"),
+    ]
+
+    for (let i = 0; i < containerArray.length; i++) {
+        holdingTextArray[i] = containerArray[i].innerHTML;
+    }
+    for (let i = 0; i < placeholderContainerArray.length; i++) {
+        holdingPlaceholderArray[i] = placeholderContainerArray[i].placeholder
+    }
+}
+
+function getLang() {
+    let lang = null
+    if (navigator.languages != undefined) {
+        lang = navigator.languages[0];
+    }
+    else { lang = navigator.language; }
+
+    let spanishOptions = ["es", "es-AR", "es-GT", "es-CR", "es-PA", "es-DO", "es-MX", "es-VE", "es-CO",
+        "es-PE", "es-EC", "es-CL", "es-UY", "es-PY", "es-BO", "es-SV", "es-HN", "es-NI",
+        "es-PR"]
+
+    for (let i = 0; i <= spanishOptions.length; i++) {
+        if (lang == spanishOptions[i]) {
+            toSpanish()
+        }
+    }
+}
+
+language = 0
+function swapLanguage() {
+    if (language == 0) {
+        toSpanish()
+        language = 1
+    } else {
+        toEnglish()
+        language = 0
+    }
 }
