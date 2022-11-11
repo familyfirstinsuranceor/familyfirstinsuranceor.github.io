@@ -13,9 +13,9 @@
 
     </script>
     <title>Family First Insurance</title>
-    <meta name="description" content="Family First Insurance offers Auto, Life, Home, and Business Insurance. 
-        Provide some contact information and quickly get the best quote for the coverage you need. 
-        Located in the heart of Newberg, Oregon. Javier will find the best price for you.">
+    <meta name="description" content="Family First Insurance ofrece seguros de automóviles, vida, hogar y negocios.
+    Proporcione alguna información de contacto y obtenga rápidamente la mejor cotización para la cobertura que necesita.
+    Ubicado en el corazón de Newberg, Oregón. Javier encontrará el mejor precio para ti.">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,10 +54,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 g-0" id="flag-row" onclick="swapLanguage()">
+                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 g-0" id="flag-row" onclick="toSpanish()">
                                 <div class="row">
-                                    <div class="col-12"><img id="flag-icon" src="img/en-flag.png" /></div>
-                                    <div class="col-12">en</div>
+                                    <div class="col-12"><img id="flag-icon" src="img/es-flag.png" /></div>
+                                    <div class="col-12">es</div>
                                 </div>
                             </div>
                         </div>
@@ -67,18 +67,17 @@
             </div>
             <div class="col-0 col-sm-1 col-md-1 col-lg-2 col-xl-2 g-0" id="navbar-filler"></div>
         </div>
-
     </div>
     <!-- Banner and tabs -->
-    <div class="row g-0" id="business-banner">
+    <div class="row" id="business-banner">
         <div class="row">
             <div class="col-0 col-md-2 col-lg-2"></div>
-            <div class="col-12 col-sm-12 col-md-8 col-lg-5" id="banner-text">
-                <p><span>Request a</span><span>Quote!</span></p>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-5" id="quote-text">
+                <p><span>Solicitar</span><span>presupuesto</span></p>
             </div>
             <div class="col-0 col-md-4 col-lg-0"></div>
         </div>
-        <div class="row g-0">
+        <div class="row">
             <div class="col-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 g-0" id="form-tab-filler"></div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8 g-0">
                 <div class="row">
@@ -87,25 +86,25 @@
                             <button class="nav-link active" id="nav-auto-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-auto" type="button" role="tab" aria-controls="nav-auto"
                                 aria-selected="true" onclick="tabClick('Auto')">
-                                <div class="tab-text" id="auto-tab-text">Auto</div>
+                                <div class="tab-text" id="auto-tab-text">Coche</div>
                                 <div class="tab-img"><img src="img/car-hatchback.png" /></div>
                             </button>
                             <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                                 type="button" role="tab" aria-controls="nav-home" aria-selected="false"
                                 onclick="tabClick('Home')">
-                                <div class="tab-text" id="home-tab-text">Home</div>
+                                <div class="tab-text" id="home-tab-text">Hogar</div>
                                 <div class="tab-img"><img src="img/home.png" /></div>
                             </button>
                             <button class="nav-link" id="nav-commercial-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-commercial" type="button" role="tab" aria-controls="nav-commercial"
                                 aria-selected="false" onclick="tabClick('Commercial')">
-                                <div class="tab-text" id="commercial-tab-text">Commercial</div>
+                                <div class="tab-text" id="commercial-tab-text">Negocio</div>
                                 <div class="tab-img"><img src="img/domain.png" /></div>
                             </button>
                             <button class="nav-link" id="nav-life-tab" data-bs-toggle="tab" data-bs-target="#nav-life"
                                 type="button" role="tab" aria-controls="nav-life" aria-selected="false"
                                 onclick="tabClick('Life')">
-                                <div class="tab-text" id="life-tab-text">Life</div>
+                                <div class="tab-text" id="life-tab-text">Vida</div>
                                 <div class="tab-img"><img src="img/account-heart.png" /></div>
                             </button>
                         </div>
@@ -131,39 +130,40 @@
                         <div class="tab-pane fade show active" id="nav-auto" role="tabpanel"
                             aria-labelledby="nav-auto-tab">
                             <div class="row">
-                                <div class="mobile-label" id="auto-section-label">Auto Insurance</div>
-                                <div class="row g-0" id="vehicle-info">Auto Info</div>
+                                <div class="mobile-label" id="auto-section-label">Seguro de auto</div>
+                                <div class="row g-0" id="vehicle-info">Información del conductor</div>
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="drivers-license-auto"
-                                            placeholder="Licence #">
+                                            placeholder="Número de licencia">
                                     </div>
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="vehicle-identification-number-auto"
                                             placeholder="VIN">
                                     </div>
                                 </div>
-                                <div class="row g-0" id="auto-name-label">Name</div>
+                                <div class="row g-0" id="auto-name-label">Nombre</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="first-name-auto"
-                                            placeholder="First">
+                                            placeholder="Primero">
                                         <small id="first-name-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                     <div class="col-4 col-sm-4 col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="middle-name-auto"
-                                            placeholder="Middle">
+                                            placeholder="Medio">
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="last-name-auto" placeholder="Last">
+                                        <input type="text" class="form-control" id="last-name-auto"
+                                            placeholder="Último">
                                         <small id="last-name-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                 </div>
-                                <div class="row g-0" id="auto-dob-label">Date of birth</div>
+                                <div class="row g-0" id="auto-dob-label">Fecha de nacimiento</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="month-auto" placeholder="MM">
@@ -187,11 +187,11 @@
                                     </div>
                                 </div>
 
-                                <div class="row g-0" id="auto-address-label">Address</div>
+                                <div class="row g-0" id="auto-address-label">Dirección</div>
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-one-auto"
-                                            placeholder="Address line 1">
+                                            placeholder="Dirección Línea Uno">
                                         <small id="address-one-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -199,26 +199,27 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-two-auto"
-                                            placeholder="Address line 2">
+                                            placeholder="Línea de dirección 2">
                                     </div>
                                 </div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="city-auto" placeholder="City">
+                                        <input type="text" class="form-control" id="city-auto" placeholder="Ciudad">
                                         <small id="city-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="state-auto" placeholder="State">
+                                        <input type="text" class="form-control" id="state-auto" placeholder="Estado">
                                         <small id="state-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="zip-auto" placeholder="Zip">
+                                        <input type="text" class="form-control" id="zip-auto"
+                                            placeholder="Código postal">
                                         <small id="zip-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -228,7 +229,7 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="email-address-auto"
-                                            placeholder="Email">
+                                            placeholder="Correo electrónico">
                                         <small id="email-address-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -236,7 +237,7 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="phone-number-auto"
-                                            placeholder="Phone number">
+                                            placeholder="Número de teléfono">
                                         <small id="phone-number-auto-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -246,7 +247,7 @@
                                     <div class="col" id="button-col">
                                         <button type="submit" class="btn" id="auto-get-your-quote"
                                             onclick="submitAuto()">
-                                            Get Your Quote!</button>
+                                            ¡Obtenga su cotización!</button>
                                     </div>
                                 </div>
                             </div>
@@ -255,28 +256,29 @@
                         <!-- HOME -->
                         <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <div class="row">
-                                <div class="mobile-label" id="home-section-label">Home Insurance</div>
-                                <div class="row g-0" id="home-name-label">Name</div>
+                                <div class="mobile-label" id="home-section-label">Seguro de Hogar</div>
+                                <div class="row g-0" id="home-name-label">Nombre</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="first-name-home"
-                                            placeholder="First">
+                                            placeholder="Primero">
                                         <small id="first-name-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="middle-name-home"
-                                            placeholder="Middle">
+                                            placeholder="Medio">
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="last-name-home" placeholder="Last">
+                                        <input type="text" class="form-control" id="last-name-home"
+                                            placeholder="Último">
                                         <small id="last-name-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                 </div>
-                                <div class="row g-0" id="home-dob-label">Date of birth</div>
+                                <div class="row g-0" id="home-dob-label">Fecha de nacimiento</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="month-home" placeholder="MM">
@@ -300,11 +302,11 @@
                                     </div>
                                 </div>
 
-                                <div class="row g-0" id="home-address-label">Address</div>
+                                <div class="row g-0" id="home-address-label">Dirección</div>
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-one-home"
-                                            placeholder="Address line 1">
+                                            placeholder="Dirección Línea Uno">
                                         <small id="address-one-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -312,26 +314,27 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-two-home"
-                                            placeholder="Address line 2">
+                                            placeholder="Línea de dirección 2">
                                     </div>
                                 </div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="city-home" placeholder="City">
+                                        <input type="text" class="form-control" id="city-home" placeholder="Ciudad">
                                         <small id="city-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="state-home" placeholder="State">
+                                        <input type="text" class="form-control" id="state-home" placeholder="Estado">
                                         <small id="state-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="zip-home" placeholder="Zip">
+                                        <input type="text" class="form-control" id="zip-home"
+                                            placeholder="Código postal">
                                         <small id="zip-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -340,7 +343,7 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="email-address-home"
-                                            placeholder="Email">
+                                            placeholder="Correo electrónico">
                                         <small id="email-address-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -348,7 +351,7 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="phone-number-home"
-                                            placeholder="Phone number">
+                                            placeholder="Número de teléfono">
                                         <small id="phone-number-home-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -357,14 +360,14 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="drivers-license-home"
-                                            placeholder="License #">
+                                            placeholder="Número de licencia">
                                     </div>
                                 </div>
                                 <div class="row g-0 p-2">
                                     <div class="col" id="button-col">
                                         <button type="submit" class="btn" id="home-get-your-quote"
                                             onclick="submitHome()">
-                                            Get Your Quote!</button>
+                                            ¡Obtenga su cotización!</button>
                                     </div>
                                 </div>
                             </div>
@@ -378,14 +381,14 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="business-name-commercial"
-                                            placeholder="Business Name">
+                                            placeholder="Nombre del Negocio">
                                         <small id="business-name-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="federal-id-number-commercial"
-                                            placeholder="Federal ID Number">
+                                            placeholder="Número de identificación federal">
                                         <small id="federal-id-number-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -394,41 +397,41 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="annual-reciepts-commercial"
-                                            placeholder="Annual Reciepts">
+                                            placeholder="Recibos Anuales">
                                         <small id="annual-reciepts-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="employee-count-commercial"
-                                            placeholder="# of Employees">
+                                            placeholder="Número de empleados">
                                         <small id="employee-count-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                 </div>
-                                <div class="row g-0" id="commercial-name-label">Name</div>
+                                <div class="row g-0" id="commercial-name-label">Nombre</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="first-name-commercial"
-                                            placeholder="First">
+                                            placeholder="Primero">
                                         <small id="first-name-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="middle-name-commercial"
-                                            placeholder="Middle">
+                                            placeholder="Medio">
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="last-name-commercial"
-                                            placeholder="Last">
+                                            placeholder="Último">
                                         <small id="last-name-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                 </div>
-                                <div class="row g-0" id="commercial-dob-label">Date of birth</div>
+                                <div class="row g-0" id="commercial-dob-label">Fecha de nacimiento</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="month-commercial" placeholder="MM">
@@ -452,11 +455,11 @@
                                     </div>
                                 </div>
 
-                                <div class="row g-0" id="commercial-address-label">Address</div>
+                                <div class="row g-0" id="commercial-address-label">Dirección</div>
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-one-commercial"
-                                            placeholder="Address line 1">
+                                            placeholder="Dirección Línea Uno">
                                         <small id="address-one-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -464,12 +467,13 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-two-commercial"
-                                            placeholder="Address line 2">
+                                            placeholder="Línea de dirección 2">
                                     </div>
                                 </div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="city-commercial" placeholder="City">
+                                        <input type="text" class="form-control" id="city-commercial"
+                                            placeholder="Ciudad">
                                         <small id="city-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -477,14 +481,15 @@
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="state-commercial"
-                                            placeholder="State">
+                                            placeholder="Estado">
                                         <small id="state-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="zip-commercial" placeholder="Zip">
+                                        <input type="text" class="form-control" id="zip-commercial"
+                                            placeholder="Código postal">
                                         <small id="zip-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -493,7 +498,7 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="email-address-commercial"
-                                            placeholder="Email">
+                                            placeholder="Correo electrónico">
                                         <small id="email-address-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -501,7 +506,7 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="phone-number-commercial"
-                                            placeholder="Phone number">
+                                            placeholder="Número de teléfono">
                                         <small id="phone-number-commercial-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -510,14 +515,13 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="drivers-license-commercial"
-                                            placeholder="License #">
+                                            placeholder="Número de licencia">
                                     </div>
                                 </div>
                                 <div class="row g-0 p-2">
                                     <div class="col" id="button-col">
                                         <button type="submit" class="btn p-2" id="commercial-get-your-quote"
-                                            onclick="submitCommercial()">Get Your
-                                            Quote!</button>
+                                            onclick="submitCommercial()">¡Obtenga su cotización!</button>
                                     </div>
                                 </div>
                             </div>
@@ -526,27 +530,28 @@
                         <div class="tab-pane fade" id="nav-life" role="tabpanel" aria-labelledby="nav-life-tab">
                             <div class="row">
                                 <div class="mobile-label" id="life-section-label">Life Insurance</div>
-                                <div class="row g-0" id="life-name-label">Name</div>
+                                <div class="row g-0" id="life-name-label">Nombre</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="first-name-life"
-                                            placeholder="First">
+                                            placeholder="Primero">
                                         <small id="first-name-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="middle-name-life"
-                                            placeholder="Middle">
+                                            placeholder="Medio">
                                     </div>
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="last-name-life" placeholder="Last">
+                                        <input type="text" class="form-control" id="last-name-life"
+                                            placeholder="Último">
                                         <small id="last-name-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
                                 </div>
-                                <div class="row g-0" id="life-dob-label">Date of birth</div>
+                                <div class="row g-0" id="life-dob-label">Fecha de nacimiento</div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
                                         <input type="text" class="form-control" id="month-life" placeholder="MM">
@@ -570,11 +575,11 @@
                                     </div>
                                 </div>
 
-                                <div class="row g-0" id="life-address-label">Address</div>
+                                <div class="row g-0" id="life-address-label">Dirección</div>
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-one-life"
-                                            placeholder="Address line 1">
+                                            placeholder="Dirección Línea Uno">
                                         <small id="address-one-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -582,26 +587,27 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="address-two-life"
-                                            placeholder="Address line 2">
+                                            placeholder="Línea de dirección 2">
                                     </div>
                                 </div>
                                 <div class="row g-0">
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="city-life" placeholder="City">
+                                        <input type="text" class="form-control" id="city-life" placeholder="Ciudad">
                                         <small id="city-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="state-life" placeholder="State">
+                                        <input type="text" class="form-control" id="state-life" placeholder="Estado">
                                         <small id="state-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
                                     </div>
 
                                     <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-2">
-                                        <input type="text" class="form-control" id="zip-life" placeholder="Zip">
+                                        <input type="text" class="form-control" id="zip-life"
+                                            placeholder="Código postal">
                                         <small id="zip-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -610,7 +616,7 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="email-address-life"
-                                            placeholder="Email">
+                                            placeholder="Correo electrónico">
                                         <small id="email-address-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -618,7 +624,7 @@
 
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="phone-number-life"
-                                            placeholder="Phone number">
+                                            placeholder="Número de teléfono">
                                         <small id="phone-number-life-err" class="form-text" hidden>
                                             Required Field
                                         </small>
@@ -627,22 +633,21 @@
                                 <div class="row g-0">
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                         <input type="text" class="form-control" id="drivers-license-life"
-                                            placeholder="License #">
+                                            placeholder="Número de licencia">
                                     </div>
                                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 p-2">
                                     </div>
                                 </div>
-                                <div class="row g-0" id="life-history-label">Medical History</div>
+                                <div class="row g-0" id="life-history-label">Historial médico</div>
                                 <div class="row g-0">
                                     <textarea type="text" class="form-control" id="note-life"
-                                        placeholder="Medical History">
+                                        placeholder="Historial médico">
                                         </textarea>
                                 </div>
                                 <div class="row g-0 p-2">
                                     <div class="col" id="button-col">
                                         <button type="submit" class="btn" id="life-get-your-quote"
-                                            onclick="submitLife()">Get
-                                            Your Quote!</button>
+                                            onclick="submitLife()">¡Obtenga su cotización!</button>
                                     </div>
                                 </div>
                             </div>
@@ -657,11 +662,11 @@
                                         <fieldset class="user-name">
                                             <div>
                                                 <input type="text" name="first" id="first-name-auto-hidden"
-                                                    placeholder="First Name">
+                                                    placeholder="Primero Name">
                                                 <input type="text" name="middle" id="middle-name-auto-hidden"
-                                                    placeholder="Middle Name">
+                                                    placeholder="Medio Name">
                                                 <input type="text" name="last" id="last-name-auto-hidden"
-                                                    placeholder="Last Name">
+                                                    placeholder="Último Name">
                                             </div>
                                         </fieldset>
                                         <fieldset class="dateofbirth">
@@ -678,23 +683,23 @@
                                             Number</label>
                                         <input type="text" name="vehicle identification number"
                                             id="vehicle-identification-number-auto-hidden" placeholder="ID#">
-                                        <label for="address-one-auto">Address Line 1</label>
+                                        <label for="address-one-auto">Dirección Line 1</label>
                                         <input type="text" name="address-one-auto" id="address-one-auto-hidden"
                                             placeholder="Address">
                                         <!-- Line 2 should be not required -->
-                                        <label for="address-two-auto">Address Line 2</label>
+                                        <label for="address-two-auto">Dirección Line 2</label>
                                         <input type="text" name="address-two-auto" id="address-two-auto-hidden"
                                             placeholder="Address">
-                                        <label for="city">City</label>
-                                        <input type="text" name="city" id="city-auto-hidden" placeholder="City">
-                                        <label for="state">State</label>
-                                        <input type="text" name="state" id="state-auto-hidden" placeholder="State"
+                                        <label for="Ciudad">City</label>
+                                        <input type="text" name="city" id="city-auto-hidden" placeholder="Ciudad">
+                                        <label for="Estado">State</label>
+                                        <input type="text" name="state" id="state-auto-hidden" placeholder="Estado"
                                             value="OR">
-                                        <label for="zip">Zip</label>
+                                        <label for="Código postal">Zip</label>
                                         <input type="text" name="zip" id="zip-auto-hidden" placeholder="#####">
-                                        <label for="email-address">Email Address</label>
+                                        <label for="Correo electrónico-address">Email Address</label>
                                         <input type="email" name="_replyto" id="email-address-auto-hidden"
-                                            placeholder="email@domain.tld">
+                                            placeholder="Correo electrónico@domain.tld">
                                         <label for="phone-number">Phone Number</label>
                                         <input type="text" name="phone-number" id="phone-number-auto-hidden"
                                             placeholder="###-###-####">
@@ -729,12 +734,12 @@
                                             placeholder="Address">
                                         <input type="text" name="address-two-home" id="address-two-home-hidden"
                                             placeholder="Address">
-                                        <input type="text" name="city" id="city-home-hidden" placeholder="City">
-                                        <input type="text" name="state" id="state-home-hidden" placeholder="State"
+                                        <input type="text" name="city" id="city-home-hidden" placeholder="Ciudad">
+                                        <input type="text" name="state" id="state-home-hidden" placeholder="Estado"
                                             value="OR">
                                         <input type="text" name="zip" id="zip-home-hidden" placeholder="#####">
                                         <input type="email" name="_replyto" id="email-address-home-hidden"
-                                            placeholder="email@domain.tld">
+                                            placeholder="Correo electrónico@domain.tld">
                                         <input type="text" name="phone-number" id="phone-number-home-hidden"
                                             placeholder="###-###-####">
                                         <input type="hidden" name="_subject" id="email-subject-home-hidden"
@@ -797,7 +802,7 @@
                                             </div>
                                         </fieldset>
                                         <fieldset class="dateofbirth">
-                                            <legend>Date of Birth</legend>
+                                            <legend>Fecha de nacimiento</legend>
                                             <div>
                                                 <input type="text" name="month" id="month-life-hidden">
                                                 <input type="text" name="day" id="day-life-hidden">
@@ -829,9 +834,8 @@
                 <!-- Who insurance is offered through -->
                 <div class="row provider-row-brands sectionpadding g-0">
                     <div class="col-0 col-sm-2"></div>
-                    <div class="providers col-12 col-sm-8" id="providers-text-line">Quality Insurance Through
-                        These
-                        Great Providers
+                    <div class="providers col-12 col-sm-8" id="providers-text-line">Seguro de calidad a través de estos
+                        excelentes proveedores
                     </div>
                     <div class="col-0 col-sm-2"></div>
                 </div>
@@ -853,8 +857,7 @@
                         <img id="contact-img" src="img/owner_picture.png" />
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-2" id="javiers-face-text">
-                        Javier's Gurantee:<br>
-                        <i>"I never stop working to get you the best deals!"</i>
+                        Garantía de Javier:<br> <i>"¡Nunca dejo de trabajar para conseguirte las mejores ofertas!"</i>
                     </div>
                 </div>
                 <!-- Review -->
@@ -868,7 +871,7 @@
                     <div class="col-4 col-sm-4 col-md-4 col-lg-4" id="review-hr-right">
                         <hr>
                     </div>
-                    <div class="text-center" id="service-promise">5 Star Service Guranteed</div>
+                    <div class="text-center" id="service-promise">Servicio de 5 estrellas garantizado</div>
                 </div>
                 <!-- Testimonials -->
                 <div class="row py-5 g-0" id="testimonials">
@@ -878,30 +881,23 @@
                                 id="testimonial-container-left">
                                 <div class="row text-center testimonial-copy">
                                     <div id="testimonial-name">Nicholas</div>
-                                    <div class="testimonial-text" id="testimonial-text-nic">"I saved a ton of
-                                        money
-                                        with the insurance Javier
-                                        found me!"
+                                    <div class="testimonial-text" id="testimonial-text-nic">"¡Ahorré un montón de dinero
+                                        con el seguro que Javier me encontró!"
                                     </div>
                                 </div>
                                 <hr class="mx-5">
                                 <div class="row text-center testimonial-copy">
                                     <div id="testimonial-name">Brandon</div>
-                                    <div class="testimonial-text" id="testimonial-text-brandon">"Javier never
-                                        stops
-                                        working hard to provide
-                                        the
-                                        best
-                                        service in town."
+                                    <div class="testimonial-text" id="testimonial-text-brandon">"Javier nunca deja de
+                                        trabajar duro para proporcionar el mejor servicio en la ciudad"
                                     </div>
                                 </div>
                                 <hr class="mx-5">
                                 <div class="row text-center testimonial-copy">
                                     <div id="testimonial-name">Jamie</div>
-                                    <div class="testimonial-text" id="testimonial-text-jamie">"I'm always able to
-                                        reach out to Javier with
-                                        questions
-                                        about my policy. The personal service means so much!"
+                                    <div class="testimonial-text" id="testimonial-text-jamie">"Siempre puedo comunicarme
+                                        con Javier si tengo preguntas sobre mi póliza. El servicio personalizado
+                                        significa mucho"
                                     </div>
                                 </div>
                             </div>
@@ -910,35 +906,25 @@
                                 <img src="img/testimonials.png" alt="owner_picture" id="testimonial-img">
                             </div>
                         </div>
+
                     </div>
                     <div class="col-0 col-sm-0 col-lg-0" id="placeholder-filler-right"></div>
-                </div>
-                <div class="row sectionpadding g-0">
-                    <div class="col-0"></div>
-                    <div class="col-12" id="se-habla">¡Se Habla Español!</div>
-                    <div class="col-0"></div>
                 </div>
                 <!-- Copy -->
                 <div class="row provider-row sectionpadding g-0">
                     <div class="col-12" id="contact-javier">
-                        <div class="fullrow contact-us-copy" id="want-to-talk">Want to talk?</div>
-                        <div class="fullrow contact-us-copy" id="call-today">Call today!</div>
+                        <div class="fullrow contact-us-copy" id="want-to-talk">¿Querer hablar?</div>
+                        <div class="fullrow contact-us-copy" id="call-today">¡Llama hoy!</div>
                         <div class="fullrow bannernumber">503-313-1942</div>
                         <div class="fullrow"><img src="img/agent.png" /></div>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div id="info-text">Working hard in the heart of Newberg, Oregon. <b>Family First Insurance</b> has
-                        been
-                        providing an exceptional customer experience purchasing and maintaining insurance for
-                        many
-                        years now. Time and time again, Javier is able to provide the personal touch that is
-                        missing
-                        from the lives of most buyers.<br><br><b>Family First Insurance</b> will never stop
-                        working
-                        for
-                        you. </br>
-                        <img id="botimg" src="img/family-first-insurance.png" />
+                    <div id="info-text">Trabajando arduamente en el corazón de Newberg, <b> Family First Insurance </b>
+                        ha brindado una experiencia excepcional al cliente al comprar y mantener un seguro durante
+                        muchos años. Una y otra vez, Javier puede brindar el toque personal que falta en la vida de la
+                        mayoría de los compradores. <br><br><b> Family First Insurance </b> nunca dejará de trabajar
+                        para usted. </br> <img id="botimg" src="img/family-first-insurance.png" />
                     </div>
                 </div>
             </div>
@@ -954,25 +940,24 @@
                 <div class="text-center">
                     <div class="row py-1">
                         <div class="text-center" id="footer-info">
-                            Family First Insurance • <a href="javascript:address();">1419
-                                Parkside Ct Newberg, OR 97132
-                            </a> • Phone: 503-313-1942 <br> Fax: 503-487-1164 • Email:
-                            javierdelaobailon@gmail.com<br>Javier De La O Bailon
+                            Family First Insurance • <a href="javascript:address();">1419 Parkside Ct Newberg, OR
+                                97132</a> • Número de teléfono: 503-313-1942 <br> Fax: 503-487-1164 • Correo
+                            electrónico:javierdelaobailon@gmail.com<br>Javier De La O Bailon
                         </div>
                     </div>
                     <div class="row py-1">
                         <div class="text-center" id="copyright">
-                            Copyright © 2022. All Rights Reserved.
+                            Derechos de autor © 2022. Todos los derechos reservados.
                         </div>
                     </div>
                     <div class="row py-1">
                         <div class="text-center" id="spanish-footer">
-                            <a href="javascript:spanishPage();">Sitio en español</a>
+                            <a href="javascript:homepage();">Site in English</a>
                         </div>
                     </div>
                     <div class="row py-1">
                         <div class="text-center" id="about-us-footer">
-                            <a href="javascript:aboutUs();">About Us</a>
+                            <a href="javascript:aboutUs();">Sobre nosotros</a>
                         </div>
                     </div>
                 </div>
