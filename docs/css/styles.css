@@ -220,6 +220,16 @@ p span {
   justify-content: center;
 }
 
+#review-stars section {
+  display: flex;
+  align-items: flex-start;
+}
+
+#star {
+  height: auto;
+  width: 100%
+}
+
 #testimonial-container-left {
   display: flex;
   flex-direction: column;
@@ -247,6 +257,8 @@ p span {
 #testimonial-img {
   border-radius: 50%;
   border: 5px solid rgb(240, 240, 240);
+  aspect-ratio: 1;
+  width: 100%;
 }
 
 #contact-img-container {
@@ -313,6 +325,13 @@ p span {
 
 .sectionpadding {
   padding-top: 48px;
+  padding-bottom: 48px;
+  margin-left: 0px;
+  padding-right: 0px;
+}
+
+.sectionpaddinghalf {
+  padding-top: 0px;
   padding-bottom: 48px;
   margin-left: 0px;
   padding-right: 0px;
