@@ -1,6 +1,9 @@
 let zipTest = /(^\d{5}$)|(^\d{5}-\d{4}$)/
 let phoneTest = /^[+]?[\s./0-9]*[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/
 let emailTest = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+function homepage() {
+    window.location.href = "index.html";
+}
 function submitAuto() {
 
     let fName = document.getElementById("first-name-auto").value
@@ -452,8 +455,18 @@ function aboutUs() {
         'page_to': "About Us",
     })
 
-    window.location.href = "https://www.familyfirstinsurancejarbgllc.com/index.html";
+    window.location.href = "about.html";
 }
+
+function spanishPage() {
+    gtag('event', "link_click", {
+        'page_from': 'Home',
+        'page_to': "Spanish Home",
+    })
+
+    window.location.href = "index-es.html";
+}
+
 function tabClick(tab) {
     gtag('event', 'tab_click', {
         'tab': tab
@@ -464,7 +477,7 @@ function toSpanish() {
 
     let containerArray = [
         // Quote Banner Text
-        document.getElementById("quote-text"),
+        document.getElementById("banner-text"),
 
         // Tabs
         document.getElementById("auto-tab-text"),
@@ -522,6 +535,8 @@ function toSpanish() {
 
         // Footer
         document.getElementById("copyright"),
+        document.getElementById("footer-info"),
+        document.getElementById("about-us-footer"),
     ]
     let spanishTextArray = [
         // Tabs and Above
@@ -537,14 +552,14 @@ function toSpanish() {
         "Nombre", // Name
         "Fecha de nacimiento", // Date of Birth
         "Dirección", // Address
-        "Obtenga su cotización", // Get Your Quote
+        "¡Obtenga su cotización!", // Get Your Quote
 
         // Home
         "Seguro de Hogar", // Home Insurance
         "Nombre", // Name
         "Fecha de nacimiento", // Date of Birth
         "Dirección", // Address
-        "Obtenga su cotización", // Get Your Quote
+        "¡Obtenga su cotización!", // Get Your Quote
 
         // Commercial
         "Seguro de negocio", // Business Insurance
@@ -552,25 +567,25 @@ function toSpanish() {
         "Nombre", // Name
         "Fecha de nacimiento", // Date of Birth
         "Dirección", // Address
-        "Obtenga su cotización", // Get Your Quote
+        "¡Obtenga su cotización!", // Get Your Quote
 
         // Life
         "Seguro de vida", // Life Insurance
         "Nombre", // Name
         "Fecha de nacimiento", // Date of Birth
         "Dirección", // Address
-        "Obtenga su cotización", // Get Your Quote
+        "¡Obtenga su cotización!", // Get Your Quote
         "Historial médico", // Medical History
 
         // Below Forms
         "Seguro de calidad a través de estos excelentes proveedores", // Providers Line
-        "Garantía de Javier:<br> <i>'¡Nunca dejo de trabajar para conseguirte las mejores ofertas!'</i>", // Gurantee
+        'Garantía de Javier:<br> <i>"¡Nunca dejo de trabajar para conseguirte las mejores ofertas!"</i>', // Gurantee
         "Servicio de 5 estrellas garantizado", // 5 Star Service
 
         // Testimonials
-        "¡Ahorré un montón de dinero con el seguro que Javier me encontró!",
-        "Javier nunca deja de trabajar duro para proporcionar el mejor servicio en la ciudad",
-        "Siempre puedo comunicarme con Javier si tengo preguntas sobre mi póliza. El servicio personalizado significa mucho",
+        '"¡Ahorré un montón de dinero con el seguro que Javier me encontró!"',
+        '"Javier nunca deja de trabajar duro para proporcionar el mejor servicio en la ciudad"',
+        '"Siempre puedo comunicarme con Javier si tengo preguntas sobre mi póliza. El servicio personalizado significa mucho"',
 
         // Contact us
         "¿Querer hablar?",
@@ -578,7 +593,10 @@ function toSpanish() {
 
         // Info Text
         'Trabajando arduamente en el corazón de Newberg, <b> Family First Insurance </b> ha brindado una experiencia excepcional al cliente al comprar y mantener un seguro durante muchos años. Una y otra vez, Javier puede brindar el toque personal que falta en la vida de la mayoría de los compradores. <br><br><b> Family First Insurance </b> nunca dejará de trabajar para usted. </br> <img id="botimg" src="img/family-first-insurance.png" />', // wall of text
-        "Copyright © 2022. Todos los derechos reservados.", // Copyright
+        "Derechos de autor © 2022. Todos los derechos reservados.", // Copyright
+        'Family First Insurance • <a href="javascript:address();">1419 Parkside Ct Newberg, OR 97132</a> • Número de teléfono: 503-313-1942 <br> Fax: 503-487-1164 • Correo electrónico:javierdelaobailon@gmail.com<br>Javier De La O Bailon', // Footer Contact Info
+        'Sobre nosotros', // About Us
+
     ]
     let placeholderContainerArray = [
         // Auto
@@ -888,7 +906,7 @@ function toEnglish() {
     ]
     let containerArray = [
         // Quote Banner Text
-        document.getElementById("quote-text"),
+        document.getElementById("banner-text"),
 
         // Tabs
         document.getElementById("auto-tab-text"),
@@ -946,6 +964,8 @@ function toEnglish() {
 
         // Footer
         document.getElementById("copyright"),
+        document.getElementById("footer-info"),
+        document.getElementById("about-us-footer"),
     ]
 
     for (let i = 0; i < containerArray.length; i++) {
@@ -963,6 +983,7 @@ function toEnglish() {
 }
 
 function init() {
+
     let placeholderContainerArray = [
         // Auto
         document.getElementById("drivers-license-auto"),
@@ -1023,7 +1044,7 @@ function init() {
     ]
     let containerArray = [
         // Quote Banner Text
-        document.getElementById("quote-text"),
+        document.getElementById("banner-text"),
 
         // Tabs
         document.getElementById("auto-tab-text"),
@@ -1081,6 +1102,8 @@ function init() {
 
         // Footer
         document.getElementById("copyright"),
+        document.getElementById("footer-info"),
+        document.getElementById("about-us-footer"),
     ]
 
     for (let i = 0; i < containerArray.length; i++) {
@@ -1116,6 +1139,129 @@ function swapLanguage() {
         language = 1
     } else {
         toEnglish()
+        language = 0
+    }
+}
+
+
+let englishTextHtml = []
+let spanishTextHtml = []
+let elements = []
+
+function aboutInit() {
+    elements = [
+        document.getElementById("top-company-name"),    //top logo area
+
+        document.getElementById("banner-text"), //main banner text
+
+        document.getElementById("javiers-face-text"), //Javiers gurantee
+        document.getElementById("about-us-text"),   //main about us text
+
+        document.getElementById("providers-text-line"), //our providers
+
+        document.getElementById("google-maps-text"),
+
+        document.getElementById("info-text"),   //bottom 
+
+        document.getElementById("footer-text"), //footer
+        document.getElementById("copyright"),
+        document.getElementById("about-us-link")
+    ]
+
+    englishTextHtml = [
+        //top logo
+        `<img id="business-logo-navbar"
+        src="img/family-first-insurance.png" />
+    Family First Insurance`,
+        //banner text
+        `<p><span><br>About Us<br><br></nr></span></p>`,
+        //Javiers gurantee
+        `Javier's Gurantee:<br>
+    <i>"I never stop working to get you the best deals!"</i>`,
+        //about us text
+        `Family First Insurance is all about Family First. We try to get you the best possible
+    insurance we can.
+
+    At Family First Insurance we give you the best customer service because we know how
+    important you are. Contact us directly at 503-313-1942. If you want to talk over email
+    send
+    it to our email at javierdelaobailon@gmail.com
+    </br>`,
+        //insurance providers text
+        `Quality Insurance Through
+    These
+    Great Providers`,
+        //google maps text
+        `Come find us<br>in Newberg`,
+        //bottom info text
+        `Working hard in the heart of Newberg, <b>Family First Insurance</b> has
+    been
+    providing an exceptional customer experience purchasing and maintaining insurance for
+    many
+    years now. Time and time again, Javier is able to provide the personal touch that is
+    missing
+    from the lives of most buyers.<br><br><b>Family First Insurance</b> will never stop
+    working
+    for
+    you.`,
+        //footer
+        `Family First Insurance • <a href="javascript:address();">1419
+    Parkside Ct Newberg, OR 97132
+</a> • Phone: 503-313-1942 <br> Fax: 503-487-1164 • Email:
+javierdelaobailon@gmail.com<br>Javier De La O Bailon`,
+        //copy right
+        `Copyright © 2022. All Rights Reserved.`,
+        //about us text in footer
+        `About Us`
+    ]
+
+    spanishTextHtml = [
+        //top logo
+        `<img id="business-logo-navbar"
+        src="img/family-first-insurance.png" />
+        Family First Insurance`,
+        //banner text
+        `<p><span><br>About Us<br><br></nr></span></p>`,
+        //Javiers gurantee
+        `Garantía de Javier:<br> <i>'¡Nunca dejo de trabajar para conseguirte las mejores ofertas!'</i>`,
+        //about us text
+        `Family First Insurance tiene que ver con Family First. Intentamos conseguirle el mejor seguro posible.
+
+        En Family First Insurance te brindamos el mejor servicio al cliente porque sabemos cómo importante eres. Contáctenos directamente al 503-313-1942. Si quieres hablar por correo electrónico enviar a nuestro correo electrónico en javierdelaobailon@gmail.com</br>`,
+        //insurance providers text
+        `Seguro de calidad a través de Estas Grandes proveedores`,
+        //google maps text
+        `Ven a buscarnos<br>en Newberg`,
+        //bottom info text
+        `Trabajando arduamente en el corazón de Newberg, <b> Family First Insurance </b> ha brindado una experiencia excepcional al cliente al comprar y mantener un seguro durante muchos años. Una y otra vez, Javier puede brindar el toque personal que falta en la vida de la mayoría de los compradores. <br><br><b> Family First Insurance </b> nunca dejará de trabajar para usted. </br> <img id="botimg" src="img/family-first-insurance.png" />`,
+        //footer
+        `Family First Insurance • <a href="javascript:address();">1419 Parkside Ct Newberg, OR 97132 </a> • Teléfono: 503-313-1942 <br> Fax: 503-487-1164 • Correo electrónico: javierdelaobailon@gmail.com<br>Javier De La O Bailon`,
+        //copy right
+        `Copyright © 2022. Todos los derechos reservados.`,
+        //about us text in footer
+        `Sobre nosotros`
+
+    ]
+}
+
+function aboutEnglish() {
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = englishTextHtml[i]
+    }
+}
+
+function aboutSpanish() {
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = spanishTextHtml[i]
+    }
+}
+
+function swapAboutLanguage() {
+    if (language == 0) {
+        aboutSpanish()
+        language = 1
+    } else {
+        aboutEnglish()
         language = 0
     }
 }
